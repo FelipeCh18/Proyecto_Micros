@@ -27,10 +27,10 @@ extern "C" {
 #define Datos LATD	//El puerto de conexión de los datos el cual se puede cambiar
 #endif
 #ifndef RS
-#define RS LATE0	//Los pines de control al LCD los cuales se
+#define RS LATD2	//Los pines de control al LCD los cuales se
 #endif
 #ifndef E
-#define E LATE1	//pueden cambiar
+#define E LATD3	//pueden cambiar
 #endif
 
 unsigned char interfaz=8;
