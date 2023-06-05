@@ -7,16 +7,20 @@
 #pragma config WDT=OFF //Apagar el perro guardian
 #pragma config PBADEN=OFF 
 #pragma config LVP=OFF
+#pragma config MCLRE=ON
 #define TRIG RE0
 #define ECHO RC2
 
-unsigned char Boton = 0; //Variable para leer Teclado
+unsigned char Tecla = 0; //Variable para leer Teclado
 unsigned char Distancia;
 unsigned char Minimo;
 
 
+void interrupt() ISR(void);
 unsigned char LeerTeclado(void);//Declarar funcion para lectura de matricial
 void Transmitir(unsigned char);
+unsigned char Recibir(void);
+
 
 void main(void) {
     TRISB=0;
@@ -76,28 +80,23 @@ void main(void) {
 
 unsigned char LeerTeclado(void){
     while(RB4==1 && RB5==1 && RB6==1 && RB7==1);
-    Verificador = 1;
     LATB=0b11111110;
-    if(RB4==0) return '+';
-    else if(RB5==0) return '=';
+    if(RB5==0) return '=';
     else if(RB6==0) return '0';
     else if(RB7==0) return 'C';
     else{
     LATB=0b11111101;
-    if(RB4==0) return '-';
-    else if(RB5==0) return '9';
+    if(RB5==0) return '9';
     else if(RB6==0) return '8';
     else if(RB7==0) return '7';
     else{
     LATB=0b11111011;
-    if(RB4==0) return 'x';
-    else if(RB5==0) return '6';
+    if(RB5==0) return '6';
     else if(RB6==0) return '5';
     else if(RB7==0) return '4';
     else{
     LATB=0b11110111;
-    if(RB4==0) return '/';
-    else if(RB5==0) return '3';
+    if(RB5==0) return '3';
     else if(RB6==0) return '2';
     else if(RB7==0) return '1';
     }
@@ -110,3 +109,70 @@ void Transmitir(unsigned char BufferT){
   while(TRMT==0);
   TXREG=BufferT;  
 }
+
+unsigned char Recibir(void){
+    while(RCIF==0);
+    return RCREG;
+}
+
+void TransmitirDatos(unsigned int Ent1, unsigned int Ent2) {
+    unsigned int DistC=Distancia;
+    Transmitir('D');
+    Transmitir('i');
+    Transmitir('s');
+    Transmitir('t');
+    Transmitir('a');
+    Transmitir('n');
+    Transmitir('c');
+    Transmitir('i');
+    Transmitir('a');
+    Transmitir(':');
+    Transmitir(' ');
+    
+
+    Transmitir(Distancia/100 + 48);
+    Transmitir((Distancia%100)/10 + 48);
+    Transmitir(Distancia%10 + 48);
+    
+    DireccionaLCD(0xC0);
+    EscribeLCD_c(Distancia/100 + 48);
+    EscribeLCD_c((Distancia%100)/10 + 48);
+    EscribeLCD_c(Distancia%10 + 48);
+    MensajeLCD_Var("cm");
+    EscribeLCD_c(' ');
+
+}
+
+void interrupt ISR(void){
+    if(RBIF==1){
+        if(PORTB!=0b11110000){
+            Tecla=16;
+            LATB=0b11111110;
+            if(RB5==0) Tecla="1";
+            else if(RB6==0) Tecla="2";
+            else if(RB7==0) Tecla="3";
+            else{
+                LATB=0b11111101;
+                if(RB5==0) Tecla="5";
+                else if(RB6==0) Tecla="6";
+                else if(RB7==0) Tecla="7";
+                else{
+                    LATB=0b11111011;
+                    if(RB5==0) Tecla="9";
+                    else if(RB6==0) Tecla="10";
+                    else if(RB7==0) Tecla="11";
+                    else{
+                        LATB=0b11110111;
+                        if(RB5==0) Tecla="13";
+                        else if(RB6==0) Tecla="14";
+                        else if(RB7==0) Tecla="15";
+                    }
+                }
+            }
+            LATB=0b11110000;
+        }
+        __delay_ms(100);
+        RBIF=0;
+    }
+}
+
