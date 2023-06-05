@@ -5,21 +5,19 @@
 #define _XTAL_FREQ 8000000
 #pragma config FOSC=INTOSC_EC //Sentencia para usar oscilador externo
 #pragma config WDT=OFF //Apagar el perro guardian
-#pragma config PBADEN=OFF 
-#pragma config LVP=OFF
-#pragma config MCLRE=ON
-#define TRIG RE0
-#define ECHO RC2
+#pragma config PBADEN=OFF //Apaga funciones análogas
+#pragma config LVP=OFF //Apaga modo de programación con bajo consumo
+#pragma config MCLRE=ON //Habilita MCLR
+#define TRIG RE0 //Pin de trigger del ultrasonido
+#define ECHO RC2 //Pin de echo del ultrasonido
 
 unsigned char Tecla = 0; //Variable para leer Teclado
-unsigned char Distancia;
-unsigned char Minimo;
+unsigned char Distancia; //Resultado del sensor
+unsigned char Minimo; //Distancia que dispara la alarma
 
-
-void interrupt() ISR(void);
-unsigned char LeerTeclado(void);//Declarar funcion para lectura de matricial
-void Transmitir(unsigned char);
-unsigned char Recibir(void);
+void interrupt() ISR(void); //Interrupción para leer teclado
+void Transmitir(unsigned char); //Transmitir por consola
+unsigned char Recibir(void); //Recibir por consola
 
 
 void main(void) {
@@ -29,30 +27,34 @@ void main(void) {
     TRISE=0;
     OSCCON=0b01111110;
     __delay_ms(1);
-    TXSTA=0b00100000;
-    RCSTA=0b10000000;
-    BAUDCON=0b00000000;
-    SPBRG=12;
-    T1CON=0b10011000;
+    TXSTA=0b00100000;//Config transmisión
+    RCSTA=0b10000000; //Config recepción
+    BAUDCON=0b00000000; //Velocidad de comunicación
+    SPBRG=12; //1.201 rate con error de -0.16%
+    T1CON=0b10011000; //Timer 1
+    //Configuración del PWM
+    TMR2 = 0x0 //Empieza a contar desde 0
+
+    //Fin config PWM
     DireccionaLCD(0x80);
     MensajeLCD_Var("Bienvenido al");
     DireccionaLCD(0xC0);
-    MensajeLCD_Var("Sistema de");
+    MensajeLCD_Var("sistema de");
     __delay_ms(1500);
     BorraLCD();
-    MensajeLCD_Var("Deteccion de");
+    MensajeLCD_Var("deteccion de");
     DireccionaLCD(0xC0);
     MensajeLCD_Var("distancias");
     __delay_ms(1500);
     BorraLCD();
     MensajeLCD_Var("Iniciando");
-    __delay_ms(1000);
+    __delay_ms(500);
     EscribeLCD_c('.');
-    __delay_ms(1000);
+    __delay_ms(500);
     EscribeLCD_c('.');
-    __delay_ms(1000);
+    __delay_ms(500);
     EscribeLCD_c('.');
-    __delay_ms(1000);
+    __delay_ms(500);
     MensajeLCD_Var("Distancia:");//redirigir el lcd al registro 0x8a
     while(1){
         CCP1CON=0b00000100;
@@ -66,7 +68,7 @@ void main(void) {
             __delay_us(10);
             t++;
             }
-        d=t/5.8;*/
+            d=t/5.8;*/
         TMR1ON=1;
         while(CCP1IF==0);
         TMR1ON=0;
@@ -74,35 +76,10 @@ void main(void) {
         Transmitir(Distancia/100 + 48);
         Transmitir((Distancia%100)/10 + 48);
         Transmitir(Distancia%10 + 48);
-        __delay_ms(1000);    
+        __delay_ms(1000);   
+        if (interruptor==1) Minimo=Recibir(); //1->Consola
+        //else Minimo= teclado xd
     }  
-}
-
-unsigned char LeerTeclado(void){
-    while(RB4==1 && RB5==1 && RB6==1 && RB7==1);
-    LATB=0b11111110;
-    if(RB5==0) return '=';
-    else if(RB6==0) return '0';
-    else if(RB7==0) return 'C';
-    else{
-    LATB=0b11111101;
-    if(RB5==0) return '9';
-    else if(RB6==0) return '8';
-    else if(RB7==0) return '7';
-    else{
-    LATB=0b11111011;
-    if(RB5==0) return '6';
-    else if(RB6==0) return '5';
-    else if(RB7==0) return '4';
-    else{
-    LATB=0b11110111;
-    if(RB5==0) return '3';
-    else if(RB6==0) return '2';
-    else if(RB7==0) return '1';
-    }
-    }
-    }
-    return '?';
 }
 
 void Transmitir(unsigned char BufferT){
@@ -129,7 +106,6 @@ void TransmitirDatos(unsigned int Ent1, unsigned int Ent2) {
     Transmitir(':');
     Transmitir(' ');
     
-
     Transmitir(Distancia/100 + 48);
     Transmitir((Distancia%100)/10 + 48);
     Transmitir(Distancia%10 + 48);
@@ -140,7 +116,6 @@ void TransmitirDatos(unsigned int Ent1, unsigned int Ent2) {
     EscribeLCD_c(Distancia%10 + 48);
     MensajeLCD_Var("cm");
     EscribeLCD_c(' ');
-
 }
 
 void interrupt ISR(void){
@@ -148,24 +123,24 @@ void interrupt ISR(void){
         if(PORTB!=0b11110000){
             Tecla=16;
             LATB=0b11111110;
-            if(RB5==0) Tecla="1";
-            else if(RB6==0) Tecla="2";
-            else if(RB7==0) Tecla="3";
+            if(RB5==0) Tecla='=';
+            else if(RB6==0) Tecla='0';
+            else if(RB7==0) Tecla='C';
             else{
                 LATB=0b11111101;
-                if(RB5==0) Tecla="5";
-                else if(RB6==0) Tecla="6";
-                else if(RB7==0) Tecla="7";
+                if(RB5==0) Tecla='9';
+                else if(RB6==0) Tecla='8';
+                else if(RB7==0) Tecla='7';
                 else{
                     LATB=0b11111011;
-                    if(RB5==0) Tecla="9";
-                    else if(RB6==0) Tecla="10";
-                    else if(RB7==0) Tecla="11";
+                    if(RB5==0) Tecla='6';
+                    else if(RB6==0) Tecla='5';
+                    else if(RB7==0) Tecla='4';
                     else{
                         LATB=0b11110111;
-                        if(RB5==0) Tecla="13";
-                        else if(RB6==0) Tecla="14";
-                        else if(RB7==0) Tecla="15";
+                        if(RB5==0) Tecla='3';
+                        else if(RB6==0) Tecla='2';
+                        else if(RB7==0) Tecla='1';
                     }
                 }
             }
@@ -175,4 +150,3 @@ void interrupt ISR(void){
         RBIF=0;
     }
 }
-
