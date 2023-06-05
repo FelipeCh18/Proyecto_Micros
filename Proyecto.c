@@ -12,6 +12,7 @@
 
 unsigned char Boton = 0; //Variable para leer Teclado
 unsigned char Distancia;
+unsigned char Minimo;
 
 
 unsigned char LeerTeclado(void);//Declarar funcion para lectura de matricial
@@ -57,11 +58,10 @@ void main(void) {
         __delay_us(10);
         TRIG=0;
         while(ECHO==0);
-        /*
-        while(ECHO==1){
+        /*while(ECHO==1){
             __delay_us(10);
             t++;
-        }
+            }
         d=t/5.8;*/
         TMR1ON=1;
         while(CCP1IF==0);
@@ -78,19 +78,13 @@ unsigned char LeerTeclado(void){
     while(RB4==1 && RB5==1 && RB6==1 && RB7==1);
     Verificador = 1;
     LATB=0b11111110;
-    if(RB4==0){
-        if(!Potencia) return '+';
-        else if(Potencia) return '^';
-    }
+    if(RB4==0) return '+';
     else if(RB5==0) return '=';
     else if(RB6==0) return '0';
     else if(RB7==0) return 'C';
     else{
     LATB=0b11111101;
-    if(RB4==0){
-        if(!Factorial) return '-';
-        else if(Factorial) return '!';
-    }
+    if(RB4==0) return '-';
     else if(RB5==0) return '9';
     else if(RB6==0) return '8';
     else if(RB7==0) return '7';

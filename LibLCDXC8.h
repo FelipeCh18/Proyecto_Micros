@@ -24,7 +24,7 @@ extern "C" {
 #define _XTAL_FREQ 20000000
 #endif
 #ifndef Datos
-#define Datos LATD	//El puerto de conexión de los datos el cual se puede cambiar
+#define Datos LATD	//El puerto de conexiï¿½n de los datos el cual se puede cambiar
 #endif
 #ifndef RS
 #define RS LATD2	//Los pines de control al LCD los cuales se
@@ -62,7 +62,7 @@ void EnviaDato(unsigned char a){
 	}	
 }
 void InicializaLCD(void){
-//Función que inicializa el LCD caracteres
+//Funciï¿½n que inicializa el LCD caracteres
 	RS=0;
 	if(interfaz==4)
 		Datos=(Datos & 0b00001111) | 0x30;
@@ -96,28 +96,27 @@ void InicializaLCD(void){
 	RetardoLCD(4);	
 }
 void HabilitaLCD(void){
-//Función que genera los pulsos de habilitación al LCD 	
+//Funciï¿½n que genera los pulsos de habilitaciï¿½n al LCD 	
 	E=1;
 	__delay_us(40);
     //Delay1TCY();
 	E=0;
 }
 void BorraLCD(void){
-//Función que borra toda la pantalla	
+//Funciï¿½n que borra toda la pantalla	
 	RS=0;
 	EnviaDato(0x01);
 	HabilitaLCD();
 	RetardoLCD(2);
 }
-/*
-void CursorAInicio(){
-//Función que lleva el cursor a la primera posición o la de la
-//primera línea mas a la izquierda
-DireccionaLCD(0x80);	
-}
-*/
+/* void CursorAInicio(){
+	//Funciï¿½n que lleva el cursor a la primera posiciï¿½n o la de la
+	//primera lï¿½nea mas a la izquierda
+	DireccionaLCD(0x80);	
+	}
+	*/
 void EscribeLCD_c(unsigned char a){
-//Función que escribe un caracter en la pantalla
+//Funciï¿½n que escribe un caracter en la pantalla
 //a es un valor en codigo ascii
 //Ejemplo EscribeLCD_c('A');
 	RS=1;
@@ -125,97 +124,96 @@ void EscribeLCD_c(unsigned char a){
 	HabilitaLCD();
 	RetardoLCD(4);
 }
-/*
-void EscribeLCD_n8(unsigned char a,unsigned char b){
-//Función que escribe un número positivo de 8 bits en la pantalla
-//a es el número a escribir, el cual debe estar en el rango de 0 a 255
-//b es el número de digitos que se desea mostrar empezando desde las unidades
-//Ejemplo EscribeLCD_n8(204,3);	
-    unsigned char centena,decena,unidad;
-	RS=1;
-	switch(b){
-		case 1: unidad=a%10;
-				EnviaDato(unidad+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				break;
-		case 2:	decena=(a%100)/10;
-				unidad=a%10;
-				EnviaDato(decena+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				EnviaDato(unidad+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				break;
-		case 3: centena=a/100;
-				decena=(a%100)/10;
-				unidad=a%10;
-				EnviaDato(centena+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				EnviaDato(decena+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				EnviaDato(unidad+48);
-				HabilitaLCD();
-				RetardoLCD(4);
-				break;
-		default: break;
+/*void EscribeLCD_n8(unsigned char a,unsigned char b){
+	//Funciï¿½n que escribe un nï¿½mero positivo de 8 bits en la pantalla
+	//a es el nï¿½mero a escribir, el cual debe estar en el rango de 0 a 255
+	//b es el nï¿½mero de digitos que se desea mostrar empezando desde las unidades
+	//Ejemplo EscribeLCD_n8(204,3);	
+		unsigned char centena,decena,unidad;
+		RS=1;
+		switch(b){
+			case 1: unidad=a%10;
+					EnviaDato(unidad+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					break;
+			case 2:	decena=(a%100)/10;
+					unidad=a%10;
+					EnviaDato(decena+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					EnviaDato(unidad+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					break;
+			case 3: centena=a/100;
+					decena=(a%100)/10;
+					unidad=a%10;
+					EnviaDato(centena+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					EnviaDato(decena+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					EnviaDato(unidad+48);
+					HabilitaLCD();
+					RetardoLCD(4);
+					break;
+			default: break;
+		}
 	}
-}
-void EscribeLCD_n16(unsigned int a,unsigned char b){
-//Función que escribe un número positivo de 16 bits en la pantalla
-//a es el número a escribir, el cual debe estar en el rango de 0 a 65535
-//b es el número de digitos que se desea mostrar empezando desde las unidades
-//Ejemplo EscribeLCD_n16(12754,5);	
-    unsigned char decena,unidad;
-	unsigned int centena,millar;
-    RS=1;
-	switch(b){
-		case 1: unidad=a%10;
-                EscribeLCD_c(unidad+48);
-				break;
-		case 2:	decena=(a%100)/10;
-				unidad=a%10;
-				EscribeLCD_c(decena+48);
-                EscribeLCD_c(unidad+48);
-				break;
-		case 3: centena=(a%1000)/100;
-                decena=(a%100)/10;
-				unidad=a%10;
-                EscribeLCD_c(centena+48);
-				EscribeLCD_c(decena+48);
-                EscribeLCD_c(unidad+48);
-				break;
-		case 4: millar=(a%10000)/1000;
-                centena=(a%1000)/100;
-                decena=(a%100)/10;
-				unidad=a%10;
-                EscribeLCD_c(millar+48);
-				EscribeLCD_c(centena+48);
-				EscribeLCD_c(decena+48);
-                EscribeLCD_c(unidad+48);
-				break;
-		case 5: EscribeLCD_c(a/10000 +48);
-				millar=(a%10000)/1000;
-                centena=(a%1000)/100;
-                decena=(a%100)/10;
-				unidad=a%10;
-                EscribeLCD_c(millar+48);
-				EscribeLCD_c(centena+48);
-				EscribeLCD_c(decena+48);
-                EscribeLCD_c(unidad+48);
-				break;
-		default: break;
-	}	
-}
-void EscribeLCD_d(double num, unsigned char digi, unsigned char digd){
-	
-}
- */
+	void EscribeLCD_n16(unsigned int a,unsigned char b){
+	//Funciï¿½n que escribe un nï¿½mero positivo de 16 bits en la pantalla
+	//a es el nï¿½mero a escribir, el cual debe estar en el rango de 0 a 65535
+	//b es el nï¿½mero de digitos que se desea mostrar empezando desde las unidades
+	//Ejemplo EscribeLCD_n16(12754,5);	
+		unsigned char decena,unidad;
+		unsigned int centena,millar;
+		RS=1;
+		switch(b){
+			case 1: unidad=a%10;
+					EscribeLCD_c(unidad+48);
+					break;
+			case 2:	decena=(a%100)/10;
+					unidad=a%10;
+					EscribeLCD_c(decena+48);
+					EscribeLCD_c(unidad+48);
+					break;
+			case 3: centena=(a%1000)/100;
+					decena=(a%100)/10;
+					unidad=a%10;
+					EscribeLCD_c(centena+48);
+					EscribeLCD_c(decena+48);
+					EscribeLCD_c(unidad+48);
+					break;
+			case 4: millar=(a%10000)/1000;
+					centena=(a%1000)/100;
+					decena=(a%100)/10;
+					unidad=a%10;
+					EscribeLCD_c(millar+48);
+					EscribeLCD_c(centena+48);
+					EscribeLCD_c(decena+48);
+					EscribeLCD_c(unidad+48);
+					break;
+			case 5: EscribeLCD_c(a/10000 +48);
+					millar=(a%10000)/1000;
+					centena=(a%1000)/100;
+					decena=(a%100)/10;
+					unidad=a%10;
+					EscribeLCD_c(millar+48);
+					EscribeLCD_c(centena+48);
+					EscribeLCD_c(decena+48);
+					EscribeLCD_c(unidad+48);
+					break;
+			default: break;
+		}	
+	}
+	void EscribeLCD_d(double num, unsigned char digi, unsigned char digd){
+		
+	}
+	*/
 void MensajeLCD_Var(char* a){
-//Función que escribe una cadena de caracteres variable en la pantalla
+//Funciï¿½n que escribe una cadena de caracteres variable en la pantalla
 //a es una cadena de caracteres guardada en una variable *char
 //Ejemplo: char aux[4]="Hola"; MensajeLCD_Var(aux);
     for(int i = 0; i<strlen(a); i++){
@@ -227,39 +225,38 @@ void MensajeLCD_Var(char* a){
 }
     
 void DireccionaLCD(unsigned char a){
-//Función que ubica el cursor en una posición especificada
-//a debe ser una dirección de 8 bits valida de la DDRAM o la CGRAM	
+//Funciï¿½n que ubica el cursor en una posiciï¿½n especificada
+//a debe ser una direcciï¿½n de 8 bits valida de la DDRAM o la CGRAM	
 	RS=0;
 	EnviaDato(a);
 	HabilitaLCD();
 	RetardoLCD(4);
 }
-/*
-void FijaCursorLCD(unsigned char fila,unsigned char columna){
-//Función que ubica el cursor en una fila y columna especificadas
-//fila es un valor positivo que especifica la posición del cursor de 1 a 4
-//columna es un valor positivo que especifica la posición del cursor de 1 a 80
-//Si el display es de una fila, Ej: 8x1, tiene 80 columnas
-//Si el display es de dos filas, Ej: 20x2, tiene 40 columnas
-//Si el display es de cuatro filas, Ej: 20x4, tiene 20 columnas
-	
-}
-void DesplazaPantallaD(void){
-//Función que desplaza una sola vez la pantalla a la derecha	
-	
-}
-void DesplazaPantallaI(void){
-//Función que desplaza una sola vez la pantalla a la izquierda
-	
-}
-void DesplazaCursorD(void){
-//Función que desplaza una sola vez la pantalla a la derecha
-	
-}
-void DesplazaCursorI(void){
-//Función que desplaza una sola vez la pantalla a la izquierda
-	
-}
+/* void FijaCursorLCD(unsigned char fila,unsigned char columna){
+	//Funciï¿½n que ubica el cursor en una fila y columna especificadas
+	//fila es un valor positivo que especifica la posiciï¿½n del cursor de 1 a 4
+	//columna es un valor positivo que especifica la posiciï¿½n del cursor de 1 a 80
+	//Si el display es de una fila, Ej: 8x1, tiene 80 columnas
+	//Si el display es de dos filas, Ej: 20x2, tiene 40 columnas
+	//Si el display es de cuatro filas, Ej: 20x4, tiene 20 columnas
+		
+	}
+	void DesplazaPantallaD(void){
+	//Funciï¿½n que desplaza una sola vez la pantalla a la derecha	
+		
+	}
+	void DesplazaPantallaI(void){
+	//Funciï¿½n que desplaza una sola vez la pantalla a la izquierda
+		
+	}
+	void DesplazaCursorD(void){
+	//Funciï¿½n que desplaza una sola vez la pantalla a la derecha
+		
+	}
+	void DesplazaCursorI(void){
+	//Funciï¿½n que desplaza una sola vez la pantalla a la izquierda
+		
+	}
  */
 
 void RetardoLCD(unsigned char a){
@@ -282,7 +279,7 @@ void RetardoLCD(unsigned char a){
 	}
 }
 void ComandoLCD(char a){
-//Función que envia cualquier comando al LCD
+//Funciï¿½n que envia cualquier comando al LCD
 	RS=0;
     Datos=a&0xF0;
     HabilitaLCD();
@@ -291,11 +288,11 @@ void ComandoLCD(char a){
     RetardoLCD(2);
     RetardoLCD(2);
 }
-void NuevoCaracter(unsigned char ubicacion, unsigned char mapeo[]){
+/*void NuevoCaracter(unsigned char ubicacion, unsigned char mapeo[]){
     int i;
     ComandoLCD(0x40 + (ubicacion * 8));
 	for (i=0;i<8;i++){
 		EscribeLCD_c(mapeo [i]);
 	}	
-}
+}*/
 #endif	/* LIBLCDXC8_H */
