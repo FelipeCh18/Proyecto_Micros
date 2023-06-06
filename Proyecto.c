@@ -145,6 +145,33 @@ void TransmitirDatos(unsigned int Minimo) {
     EscribeLCD_c(' ');
 }
 
+unsigned char LeerTeclado(void){
+    while(RB4==1 && RB5==1 && RB6==1 && RB7==1);
+    Verificador = 1;
+    LATB=0b11111110;
+    if(RB5==0) return '=';
+    else if(RB6==0) return '0';
+    else if(RB7==0) return 'C';
+    else{
+        LATB=0b11111101;
+        if(RB5==0) return '9';
+        else if(RB6==0) return '8';
+        else if(RB7==0) return '7';
+        else{
+            LATB=0b11111011;
+            if(RB5==0) return '6';
+            else if(RB6==0) return '5';
+            else if(RB7==0) return '4';
+            else{
+                LATB=0b11110111;
+                if(RB5==0) return '3';
+                else if(RB6==0) return '2';
+                else if(RB7==0) return '1';
+            }
+        }
+    }
+}
+
 void __interrupt() ISR(void){
     if(TMR0IF){
         TMR0IF=0;
@@ -165,35 +192,10 @@ void __interrupt(low_priority) ISRL(void){
         MensajeLCD_Var("Ingrese dist. de");
         DireccionaLCD(0xC0);
         MensajeLCD_Var("alarma: ");
-        for (int i=0;i<3;i++){
-            if(PORTB!=0b11110000){
-                Tecla=16;
-                LATB=0b11111110;
-                if(RB5==0) Tecla='=';
-                else if(RB6==0) Tecla='0';
-                else if(RB7==0) Tecla='C';
-                else{
-                    LATB=0b11111101;
-                    if(RB5==0) Tecla='9';
-                    else if(RB6==0) Tecla='8';
-                    else if(RB7==0) Tecla='7';
-                    else{
-                        LATB=0b11111011;
-                        if(RB5==0) Tecla='6';
-                        else if(RB6==0) Tecla='5';
-                        else if(RB7==0) Tecla='4';
-                        else{
-                            LATB=0b11110111;
-                            if(RB5==0) Tecla='3';
-                            else if(RB6==0) Tecla='2';
-                            else if(RB7==0) Tecla='1';
-                        }
-                    }
-                }
-                LATB=0b11110000;
-            }
+        Tecla=LeerTeclado();
+        DireccionaLCD(0xC8);
+        EscribeLCD_c(Tecla);
         }
-        
         __delay_ms(100);
         RBIF=0;
     }
