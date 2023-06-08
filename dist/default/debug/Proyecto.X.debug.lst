@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.40 build 20220703182018 
-                                                                                               Wed Jun 07 12:00:24 2023
+                                                                                               Wed Jun 07 11:57:01 2023
 
 Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og9 
      1                           	processor	18F4550
@@ -107,32 +107,32 @@ Microchip MPLAB XC8 C Compiler v2.40 (Free license) build 20220703182018 Og9
     93   000000                     _BAUDCON	set	4024
     94   000000                     _TRISC	set	3988
     95   000000                     _TRISD	set	3989
-    96   000000                     _RBPU	set	32655
-    97   000000                     _TRMT	set	32097
-    98   000000                     _TMR1ON	set	32360
-    99   000000                     _RC1	set	31761
-   100   000000                     _TMR2ON	set	32338
-   101   000000                     _GIE	set	32663
-   102   000000                     _RBIE	set	32659
-   103   000000                     _LATD3	set	31843
-   104   000000                     _LATD2	set	31842
-   105   000000                     _LATD	set	3980
-   106   000000                     _UTRDIS	set	31611
-   107   000000                     _TRISA	set	3986
-   108   000000                     _TRISB	set	3987
-   109   000000                     _RBIF	set	32656
-   110   000000                     _RCSTA	set	4011
-   111   000000                     _TXSTA	set	4012
-   112   000000                     _OSCCON	set	4051
-   113   000000                     _TRISE	set	3990
-   114   000000                     _RCIE	set	31981
-   115   000000                     _CCP2CON	set	4026
-   116   000000                     _CCP1CON	set	4029
-   117   000000                     _ADCON1	set	4033
-   118   000000                     _T2CON	set	4042
-   119   000000                     _T1CON	set	4045
-   120   000000                     _CCP2IF	set	32008
-   121   000000                     _RCIF	set	31989
+    96   000000                     _RC1	set	31761
+    97   000000                     _LATD3	set	31843
+    98   000000                     _LATD2	set	31842
+    99   000000                     _TRMT	set	32097
+   100   000000                     _TMR1ON	set	32360
+   101   000000                     _TMR2ON	set	32338
+   102   000000                     _GIE	set	32663
+   103   000000                     _RBIE	set	32659
+   104   000000                     _LATD	set	3980
+   105   000000                     _UTRDIS	set	31611
+   106   000000                     _RCSTA	set	4011
+   107   000000                     _TXSTA	set	4012
+   108   000000                     _OSCCON	set	4051
+   109   000000                     _CCP2IF	set	32008
+   110   000000                     _RCIF	set	31989
+   111   000000                     _RCIE	set	31981
+   112   000000                     _RBPU	set	32655
+   113   000000                     _TRISA	set	3986
+   114   000000                     _TRISB	set	3987
+   115   000000                     _RBIF	set	32656
+   116   000000                     _TRISE	set	3990
+   117   000000                     _CCP2CON	set	4026
+   118   000000                     _CCP1CON	set	4029
+   119   000000                     _ADCON1	set	4033
+   120   000000                     _T2CON	set	4042
+   121   000000                     _T1CON	set	4045
    122   000000                     _TMR1	set	4046
    123   000000                     _RB5	set	31757
    124   000000                     _RC0	set	31760
@@ -3069,7 +3069,7 @@ Auto Spaces:
     BANK0           160      0       0
     BANK1           256      0       0
     BANK2           256      0       0
-    BANK3           256      0       0
+    BANK3           239      0       0
     BANK4           256      0       0
     BANK5           256      0       0
     BANK6           256      0       0
@@ -3343,54 +3343,73 @@ Call Graph Tables:
 
  Address spaces:
 Name               Size   Autos  Total    Cost      Usage
-BIGRAM             7FF      0       0      37        0.0%
+BIGRAM_1           400      0       0      39        0.0%
+BIGRAM             3EE      0       0      40        0.0%
 EEDATA             100      0       0       0        0.0%
-BITBANK7           100      0       0      18        0.0%
-BANK7              100      0       0      19        0.0%
-BITBANK6           100      0       0      16        0.0%
-BANK6              100      0       0      17        0.0%
-BITBANK5           100      0       0      14        0.0%
-BANK5              100      0       0      15        0.0%
-BITBANK4           100      0       0      12        0.0%
-BANK4              100      0       0      13        0.0%
-BITBANK3           100      0       0      10        0.0%
-BANK3              100      0       0      11        0.0%
-BITBANK2           100      0       0       8        0.0%
-BANK2              100      0       0       9        0.0%
-BITBANK1           100      0       0       6        0.0%
-BANK1              100      0       0       7        0.0%
-BITBANK0            A0      0       0       4        0.0%
-BANK0               A0      0       0       5        0.0%
+BITBANK7           100      0       0      17        0.0%
+BANK7              100      0       0      18        0.0%
+BITBANK6           100      0       0      15        0.0%
+BANK6              100      0       0      16        0.0%
+BITBANK5           100      0       0      13        0.0%
+BANK5              100      0       0      14        0.0%
+BITBANK4           100      0       0      11        0.0%
+BANK4              100      0       0      12        0.0%
+BITBANK2           100      0       0       7        0.0%
+BANK2              100      0       0       8        0.0%
+BITBANK1           100      0       0       5        0.0%
+BANK1              100      0       0       6        0.0%
+BITBANK3            EF      0       0       9        0.0%
+BANK3               EF      0       0      10        0.0%
+BITBANK0            A0      0       0       3        0.0%
+BANK0               A0      0       0       4        0.0%
 BITCOMRAM           5E      0       0       0        0.0%
 COMRAM              5E     24      29       1       43.6%
-BITBIGSFRhhlhh      1D      0       0      21        0.0%
-BITBIGSFRlhl        11      0       0      34        0.0%
-BITBIGSFRll          F      0       0      35        0.0%
-BITBIGSFRhhh         D      0       0      20        0.0%
-BITBIGSFRhhlhll      9      0       0      27        0.0%
-BITBIGSFRhhlhlh      8      0       0      23        0.0%
-BITBIGSFRhhlhlh      8      0       0      26        0.0%
-BITBIGSFRhhlhll      6      0       0      29        0.0%
-BITBIGSFRlhhhl       5      0       0      32        0.0%
-BITBIGSFRhl          5      0       0      30        0.0%
-BITBIGSFRhhlhlh      3      0       0      22        0.0%
-BITBIGSFRhhlhlh      2      0       0      24        0.0%
-BITBIGSFRhhlhll      2      0       0      28        0.0%
-BITBIGSFRlhhhh       1      0       0      31        0.0%
-BITBIGSFRlhhl        1      0       0      33        0.0%
-BITBIGSFRhhlhlh      1      0       0      25        0.0%
+BITBIGSFRlhl        11      0       0      36        0.0%
+BITBIGSFRll          F      0       0      37        0.0%
+BITBIGSFR_1lh        9      0       0      29        0.0%
+BITBIGSFR_5h         9      0       0      19        0.0%
+BITBIGSFR_1hhhl      8      0       0      25        0.0%
+BITBIGSFR_1hlh       8      0       0      28        0.0%
+BITBIGSFR_2          6      0       0      23        0.0%
+BITBIGSFRlhhhl       5      0       0      34        0.0%
+BITBIGSFRhhh         5      0       0      31        0.0%
+BITBIGSFRhl          5      0       0      32        0.0%
+BITBIGSFR_1hhhh      3      0       0      24        0.0%
+BITBIGSFR_4          3      0       0      21        0.0%
+BITBIGSFR_3          3      0       0      22        0.0%
+BITBIGSFR_1hhlh      2      0       0      26        0.0%
+BITBIGSFR_1ll        2      0       0      30        0.0%
+BITBIGSFRlhhhh       1      0       0      33        0.0%
+BITBIGSFRlhhl        1      0       0      35        0.0%
+BITBIGSFR_1hhll      1      0       0      27        0.0%
+BITBIGSFR_5l         1      0       0      20        0.0%
+BIGSFR_5             0      0       0     200        0.0%
+BIGSFR_4             0      0       0     200        0.0%
+BIGSFR_3             0      0       0     200        0.0%
+BIGSFR_2             0      0       0     200        0.0%
+BIGSFR_1             0      0       0     200        0.0%
 BIGSFR               0      0       0     200        0.0%
+BITSFR_5             0      0       0     200        0.0%
+SFR_5                0      0       0     200        0.0%
+BITSFR_4             0      0       0     200        0.0%
+SFR_4                0      0       0     200        0.0%
+BITSFR_3             0      0       0     200        0.0%
+SFR_3                0      0       0     200        0.0%
+BITSFR_2             0      0       0     200        0.0%
+SFR_2                0      0       0     200        0.0%
+BITSFR_1             0      0       0     200        0.0%
+SFR_1                0      0       0     200        0.0%
 BITSFR               0      0       0     200        0.0%
 SFR                  0      0       0     200        0.0%
 STACK                0      0       0       2        0.0%
 NULL                 0      0       0       0        0.0%
-ABS                  0      0      29      36        0.0%
-DATA                 0      0      29       3        0.0%
+ABS                  0      0      29      38        0.0%
+DATA                 0      0      29      41        0.0%
 CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.40 build 20220703182018 
-Symbol Table                                                                                   Wed Jun 07 12:00:24 2023
+Symbol Table                                                                                   Wed Jun 07 11:57:01 2023
 
        Transmitir@BufferT 0014                EnviaDato@a 0017             _InicializaLCD 0B1A  
                      l171 09F0                       l168 09EA                       l709 0E4C  

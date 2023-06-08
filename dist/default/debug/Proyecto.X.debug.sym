@@ -338,7 +338,7 @@ _BorraLCD 1050 0 CODE 0
 Transmitir@BufferT 14 0 COMRAM 1
 __end_of_BorraLCD 1064 0 CODE 0
 __smallconst 800 0 SMALLCONST 0
-__Hreset_vec 4 0 CODE 0
+__Hreset_vec 6 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 __end_of_Recibir 1098 0 CODE 0
 __accesstop 60 0 ABS 0
@@ -369,15 +369,15 @@ __activetblptr 2 0 ABS 0
 ___lbmod@rem 17 0 COMRAM 1
 ___lbdiv@dividend 19 0 COMRAM 1
 %segments
-reset_vec 0 3 CODE 0 0
+reset_vec 0 5 CODE 0 0
 intcode 8 11 CODE 8 0
 smallconst 800 84B SMALLCONST 800 0
 cstackCOMRAM 1 2A COMRAM 1 1
 text0 84C 1099 CODE 84C 0
 %locals
-dist/default/production\Proyecto.X.production.obj
+dist/default/debug\Proyecto.X.debug.obj
 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
-C:\Users\acer\AppData\Local\Temp\xcAsf3c.as
+C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
 698 FA0 0 CODE 0
 700 FA0 0 CODE 0
 703 FA0 0 CODE 0
@@ -650,8 +650,8 @@ LibLCDXC8.h
 51 FF8 0 CODE 0
 52 1008 0 CODE 0
 53 100C 0 CODE 0
-C:\Users\acer\AppData\Local\Temp\xcAsf3c.as
-3795 8 0 CODE 0
+C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
+3814 8 0 CODE 0
 Proyecto.c
 188 8 0 CODE 0
 Proyecto.c

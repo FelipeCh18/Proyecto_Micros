@@ -4,17 +4,21 @@ Linker command line:
 
 -W-3 \
   --edf=C:\Program Files\Microchip\xc8\v2.40\pic\dat\20220703182018_en.msgs \
-  -cn -h+dist/default/production\Proyecto.X.production.sym \
-  --cmf=dist/default/production\Proyecto.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\acer\AppData\Local\Temp\xcAsf3c.4 \
-  -Mdist/default/production/Proyecto.X.production.map \
-  --md=C:\Users\acer\AppData\Local\Temp\xcAsf3c.dat -E1 -ver=XC8 Compiler \
-  -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
-  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
-  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
-  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -cn -h+dist/default/debug\Proyecto.X.debug.sym \
+  --cmf=dist/default/debug\Proyecto.X.debug.cmf -z -Q18F4550 \
+  -oC:\Users\acer\AppData\Local\Temp\xcAsc4g.4 \
+  -Mdist/default/debug/Proyecto.X.debug.map \
+  --md=C:\Users\acer\AppData\Local\Temp\xcAsc4g.dat -E1 -ver=XC8 Compiler \
+  -ACODE=00h-07D3Fh -ACONST=00h-07D3Fh \
+  -ASMALLCONST=0800h-08FFhx117,07D00h-07D3Fh -AMEDIUMCONST=0800h-07D3Fh \
+  -ACOMRAM=01h-05Fh -AABS1=00h-03EEh,0400h-07FFh \
+  -ABIGRAM=01h-03EEh,0400h-07FFh \
+  -ARAM=060h-0FFh,0100h-01FFhx2,0300h-03EEh,0400h-04FFhx4 -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03EEh \
   -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
-  -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh -ABIGSFR=0F60h-0FFFh \
+  -ABANK7=0700h-07FFh \
+  -ASFR=0F60h-0F9Bh,0F9Dh-0FD3h,0FD5h-0FDAh,0FE0h-0FE2h,0FE8h-0FEAh,0FF0h-0FFBh \
+  -ABIGSFR=0F60h-0F9Bh,0F9Dh-0FD3h,0FD5h-0FDAh,0FE0h-0FE2h,0FE8h-0FEAh,0FF0h-0FFBh \
   -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
   -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
   -preset_vec=00h,intcode=08h,intcodelo,powerup,init -pramtop=0800h \
@@ -24,8 +28,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\acer\AppData\Local\Temp\xcAsf3c.obj \
-  dist/default/production\Proyecto.X.production.obj 
+  C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj \
+  dist/default/debug\Proyecto.X.debug.obj 
 
 Object code version is 3.11
 
@@ -34,12 +38,12 @@ Machine type is 18F4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\acer\AppData\Local\Temp\xcAsf3c.obj
+C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                  E        E        4        4       0
-                reset_vec                             0        0        4        0       0
-dist/default/production\Proyecto.X.production.obj
+                reset_vec                             0        0        6        0       0
+dist/default/debug\Proyecto.X.debug.obj
                 intcode                               8        8        6        4       0
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
@@ -79,7 +83,7 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   CODE           
                 intcode                               8        8        6         0
                 init                                  E        E        4         0
-                reset_vec                             0        0        4         0
+                reset_vec                             0        0        6         0
                 text23                             108C     108C        C         0
                 text22                             1072     1072        E         0
                 text21                              D9E      D9E       66         0
@@ -164,7 +168,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                reset_vec                      000000  000004  000004         0       0  CODE    
+                reset_vec                      000000  000006  000006         0       0  CODE    
                 cstackCOMRAM                   000001  00002A  00002B         1       1  COMRAM  
                 intcode                        000008  00000A  000012         4       0  CODE    
                 smallconst                     000800  00004C  00084C       400       0  SMALLCON
@@ -177,25 +181,37 @@ UNUSED ADDRESS RANGES
         BANK0            000060-0000FF               A0
         BANK1            000100-0001FF              100
         BANK2            000200-0002FF              100
-        BANK3            000300-0003FF              100
+        BANK3            000300-0003EE               EF
         BANK4            000400-0004FF              100
         BANK5            000500-0005FF              100
         BANK6            000600-0006FF              100
         BANK7            000700-0007FF              100
-        BIGRAM           00002B-0007FF              7D5
-        BIGSFR           000F60-000FFF               A0
-        CODE             000004-000007                4
+        BIGRAM           00002B-0003EE              3C4
+                         000400-0007FF              400
+        BIGSFR           000F60-000F9B               3C
+                         000F9D-000FD3               37
+                         000FD5-000FDA                6
+                         000FE0-000FE2                3
+                         000FE8-000FEA                3
+                         000FF0-000FFB                C
+        CODE             000006-000007                2
                          000012-0007FF              7EE
-                         00109A-007FFF             6F66
+                         00109A-007D3F             6CA6
         COMRAM           00002B-00005F               35
-        CONST            000004-000007                4
+        CONST            000006-000007                2
                          000012-0007FF              7EE
-                         00109A-007FFF             6F66
+                         00109A-007D3F             6CA6
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      00109A-007FFF             6F66
-        RAM              000060-0007FF              100
-        SFR              000F60-000FFF               A0
-        SMALLCONST       00109A-007FFF              100
+        MEDIUMCONST      00109A-007D3F             6CA6
+        RAM              000060-0003EE              100
+                         000400-0007FF              100
+        SFR              000F60-000F9B               3C
+                         000F9D-000FD3               37
+                         000FD5-000FDA                6
+                         000FE0-000FE2                3
+                         000FE8-000FEA                3
+                         000FF0-000FFB                C
+        SMALLCONST       00109A-007D3F              100
 
                                   Symbol Table
 
@@ -322,7 +338,7 @@ __Hramtop                 ramtop       000800
 __Hrbit                   rbit         000000
 __Hrbss                   rbss         000000
 __Hrdata                  rdata        000000
-__Hreset_vec              reset_vec    000004
+__Hreset_vec              reset_vec    000006
 __Hrparam                 rparam       000000
 __Hsfr                    sfr          000000
 __Hsmallconst             smallconst   00084C
