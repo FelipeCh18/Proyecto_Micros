@@ -18,18 +18,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 "56 C:\Program Files\Microchip\xc8\v2.40\pic\include\c90\string.h
 [v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
 [p mainexit ]
-"3626 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
-[v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
-"3428
-[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"10397
+"10397 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
 [v _RBPU `Vb ~T0 @X0 0 e@32655 ]
+"10907
+[v _TRISB0 `Vb ~T0 @X0 0 e@31896 ]
 "4002
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "3848
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"4224
-[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
 "7987
 [v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
 "5147
@@ -42,18 +38,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _SPBRG `Vuc ~T0 @X0 0 e@4015 ]
 "6582
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"10391
-[v _RBIF `Vb ~T0 @X0 0 e@32656 ]
-"10388
-[v _RBIE `Vb ~T0 @X0 0 e@32659 ]
 "10445
 [v _RCIE `Vb ~T0 @X0 0 e@31981 ]
 "10448
 [v _RCIF `Vb ~T0 @X0 0 e@31989 ]
 "9746
 [v _GIE `Vb ~T0 @X0 0 e@32663 ]
+"9830
+[v _INT0IE `Vb ~T0 @X0 0 e@32660 ]
+"9833
+[v _INT0IF `Vb ~T0 @X0 0 e@32657 ]
+"9878
+[v _INTEDG0 `Vb ~T0 @X0 0 e@32654 ]
+"9095
+[v _CCP2IE `Vb ~T0 @X0 0 e@32000 ]
+"9098
+[v _CCP2IF `Vb ~T0 @X0 0 e@32008 ]
 "7416
 [v _T1CON `Vuc ~T0 @X0 0 e@4045 ]
+"11084
+[v _USBEN `Vb ~T0 @X0 0 e@31595 ]
 "11099
 [v _UTRDIS `Vb ~T0 @X0 0 e@31611 ]
 "6328
@@ -66,14 +70,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
 "6497
 [v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
-"10853
+"24 Proyecto.c
+[v _Recibir_Cadena `(v ~T0 @X0 0 ef2`*uc`ui ]
+"10853 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
 [v _TMR2ON `Vb ~T0 @X0 0 e@32338 ]
 "6243
 [v _CCP2CON `Vuc ~T0 @X0 0 e@4026 ]
 "7519
 [v _TMR1 `Vus ~T0 @X0 0 e@4046 ]
-"9098
-[v _CCP2IF `Vb ~T0 @X0 0 e@32008 ]
 [t ~ __deprecated__ ]
 [t T20 __deprecated__ ]
 "10400
@@ -84,24 +88,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TMR1ON `Vb ~T0 @X0 0 e@32360 ]
 "6307
 [v _CCPR2 `Vus ~T0 @X0 0 e@4027 ]
-"10499
-[v _RE1 `Vb ~T20 @X0 0 e@31777 ]
 "25 Proyecto.c
+[v _SaveData `(v ~T0 @X0 0 ef2`ui`uc ]
+"23
 [v _TransmitirDatos `(v ~T0 @X0 0 ef1`ui ]
 "10979 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f4550.h
 [v _TRMT `Vb ~T0 @X0 0 e@32097 ]
 "5403
 [v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
+"10181
+[v _OERR `Vb ~T0 @X0 0 e@32089 ]
+"9206
+[v _CREN `Vb ~T0 @X0 0 e@32092 ]
 "5415
 [v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
-"3074
-[v _LATB `Vuc ~T0 @X0 0 e@3978 ]
-"10379
-[v _RB5 `Vb ~T20 @X0 0 e@31757 ]
-"10382
-[v _RB6 `Vb ~T20 @X0 0 e@31758 ]
-"10385
-[v _RB7 `Vb ~T20 @X0 0 e@31759 ]
+"4930
+[v _EEADR `Vuc ~T0 @X0 0 e@4009 ]
+"4923
+[v _EEDATA `Vuc ~T0 @X0 0 e@4008 ]
+"9323
+[v _EEPGD `Vb ~T0 @X0 0 e@32055 ]
+"9122
+[v _CFGS `Vb ~T0 @X0 0 e@32054 ]
+"11147
+[v _WREN `Vb ~T0 @X0 0 e@32050 ]
+"4916
+[v _EECON2 `Vuc ~T0 @X0 0 e@4007 ]
+"11141
+[v _WR `Vb ~T0 @X0 0 e@32049 ]
+"9317
+[v _EEIF `Vb ~T0 @X0 0 e@32012 ]
+"10457
+[v _RD `Vb ~T0 @X0 0 e@32048 ]
 [t ~ __interrupt . k ]
 [t T48 __interrupt  ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
@@ -4122,587 +4140,722 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x LVP=OFF ]
 "10
 [p x MCLRE=ON ]
-"16
+"14
 [v _Tecla `uc ~T0 @X0 1 e ]
 [i _Tecla
 -> -> 0 `i `uc
 ]
-[; ;Proyecto.c: 16: unsigned char Tecla = 0;
-"17
+[; ;Proyecto.c: 14: unsigned char Tecla = 0;
+"15
 [v _Distancia `uc ~T0 @X0 1 e ]
-[; ;Proyecto.c: 17: unsigned char Distancia;
-"18
-[v _Minimo `uc ~T0 @X0 1 e ]
-[i _Minimo
--> .10.0 `uc
-]
-[; ;Proyecto.c: 18: unsigned char Minimo=10.0;
-"19
-[v _en_entrada `uc ~T0 @X0 1 e ]
-[i _en_entrada
--> -> 0 `i `uc
-]
-[; ;Proyecto.c: 19: unsigned char en_entrada=0;
-[; ;Proyecto.c: 22: void __interrupt() ISR(void);
-[; ;Proyecto.c: 23: void Transmitir(unsigned char);
-[; ;Proyecto.c: 24: unsigned int Recibir(void);
-[; ;Proyecto.c: 25: void TransmitirDatos(unsigned int);
+[; ;Proyecto.c: 15: unsigned char Distancia;
+"16
+[v _Minimo `i ~T0 @X0 1 e ]
+[; ;Proyecto.c: 16: int Minimo;
+"17
+[v _Minimo_Consola `i ~T0 @X0 -> 5 `i e ]
+[; ;Proyecto.c: 17: int Minimo_Consola[5];
+[; ;Proyecto.c: 20: void __interrupt() ISR(void);
+[; ;Proyecto.c: 21: void Transmitir(unsigned char);
+[; ;Proyecto.c: 22: unsigned int Recibir(void);
+[; ;Proyecto.c: 23: void TransmitirDatos(unsigned int);
+[; ;Proyecto.c: 24: void Recibir_Cadena(char*, unsigned int);
+[; ;Proyecto.c: 25: void SaveData(unsigned int, unsigned char);
+[; ;Proyecto.c: 26: unsigned char ReadData(unsigned int);
 [v $root$_main `(v ~T0 @X0 0 e ]
-"27
+"28
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;Proyecto.c: 27: void main(void) {
+[; ;Proyecto.c: 28: void main(void) {
 [e :U _main ]
 [f ]
-[; ;Proyecto.c: 28: BorraLCD();
-"28
-[e ( _BorraLCD ..  ]
-[; ;Proyecto.c: 29: TRISB = 0b11110000;
+[; ;Proyecto.c: 29: BorraLCD();
 "29
-[e = _TRISB -> -> 240 `i `uc ]
-[; ;Proyecto.c: 30: TRISA = 0;
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 30: RBPU = 0;
 "30
-[e = _TRISA -> -> 0 `i `uc ]
-[; ;Proyecto.c: 31: RBPU = 0;
-"31
 [e = _RBPU -> -> 0 `i `b ]
+[; ;Proyecto.c: 31: TRISB0 = 1;
+"31
+[e = _TRISB0 -> -> 1 `i `b ]
 [; ;Proyecto.c: 32: TRISD = 0;
 "32
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;Proyecto.c: 33: TRISC = 0b11000010;
+[; ;Proyecto.c: 33: TRISC = 0b11010010;
 "33
-[e = _TRISC -> -> 194 `i `uc ]
-[; ;Proyecto.c: 34: TRISE = 0b00001010;
+[e = _TRISC -> -> 210 `i `uc ]
+[; ;Proyecto.c: 34: OSCCON = 0b01110000;
 "34
-[e = _TRISE -> -> 10 `i `uc ]
-[; ;Proyecto.c: 35: OSCCON = 0b01110000;
-"35
 [e = _OSCCON -> -> 112 `i `uc ]
-[; ;Proyecto.c: 36: _delay((unsigned long)((1)*(8000000/4000.0)));
-"36
+[; ;Proyecto.c: 35: _delay((unsigned long)((1)*(8000000/4000.0)));
+"35
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 37: TXSTA = 0b00100000;
-"37
+[; ;Proyecto.c: 36: TXSTA = 0b00100000;
+"36
 [e = _TXSTA -> -> 32 `i `uc ]
-[; ;Proyecto.c: 38: RCSTA = 0b10010000;
-"38
+[; ;Proyecto.c: 37: RCSTA = 0b10010000;
+"37
 [e = _RCSTA -> -> 144 `i `uc ]
-[; ;Proyecto.c: 39: BAUDCON = 0b00000000;
-"39
+[; ;Proyecto.c: 38: BAUDCON = 0b00000000;
+"38
 [e = _BAUDCON -> -> 0 `i `uc ]
-[; ;Proyecto.c: 40: SPBRG = 12;
-"40
+[; ;Proyecto.c: 39: SPBRG = 12;
+"39
 [e = _SPBRG -> -> 12 `i `uc ]
-[; ;Proyecto.c: 41: ADCON1 = 15;
-"41
+[; ;Proyecto.c: 40: ADCON1 = 15;
+"40
 [e = _ADCON1 -> -> 15 `i `uc ]
-[; ;Proyecto.c: 42: RBIF = 0;
-"42
-[e = _RBIF -> -> 0 `i `b ]
-[; ;Proyecto.c: 43: RBIE = 1;
-"43
-[e = _RBIE -> -> 1 `i `b ]
-[; ;Proyecto.c: 44: RCIE=1;
-"44
+[; ;Proyecto.c: 41: RCIE = 1;
+"41
 [e = _RCIE -> -> 1 `i `b ]
-[; ;Proyecto.c: 45: RCIF=0;
-"45
+[; ;Proyecto.c: 42: RCIF = 0;
+"42
 [e = _RCIF -> -> 0 `i `b ]
-[; ;Proyecto.c: 46: GIE = 1;
-"46
+[; ;Proyecto.c: 43: GIE = 1;
+"43
 [e = _GIE -> -> 1 `i `b ]
-[; ;Proyecto.c: 48: T1CON = 0b10010000;
+[; ;Proyecto.c: 45: INT0IE = 1;
+"45
+[e = _INT0IE -> -> 1 `i `b ]
+[; ;Proyecto.c: 46: INT0IF = 0;
+"46
+[e = _INT0IF -> -> 0 `i `b ]
+[; ;Proyecto.c: 47: INTEDG0 = 1;
+"47
+[e = _INTEDG0 -> -> 1 `i `b ]
+[; ;Proyecto.c: 48: CCP2IE = 1;
 "48
-[e = _T1CON -> -> 144 `i `uc ]
-[; ;Proyecto.c: 49: UTRDIS = 1;
+[e = _CCP2IE -> -> 1 `i `b ]
+[; ;Proyecto.c: 49: CCP2IF = 0;
 "49
-[e = _UTRDIS -> -> 1 `i `b ]
-[; ;Proyecto.c: 51: CCP1CON=0b00001100;
-"51
-[e = _CCP1CON -> -> 12 `i `uc ]
-[; ;Proyecto.c: 52: T2CON = 0b00000010;
+[e = _CCP2IF -> -> 0 `i `b ]
+[; ;Proyecto.c: 52: T1CON = 0b10010000;
 "52
-[e = _T2CON -> -> 2 `i `uc ]
-[; ;Proyecto.c: 53: TMR2 = 0;
+[e = _T1CON -> -> 144 `i `uc ]
+[; ;Proyecto.c: 53: USBEN = 0;
 "53
-[e = _TMR2 -> -> 0 `i `uc ]
-[; ;Proyecto.c: 54: PR2 = 249;
+[e = _USBEN -> -> 0 `i `b ]
+[; ;Proyecto.c: 54: UTRDIS = 1;
 "54
-[e = _PR2 -> -> 249 `i `uc ]
-[; ;Proyecto.c: 55: CCPR1L = 0;
-"55
-[e = _CCPR1L -> -> 0 `i `uc ]
-[; ;Proyecto.c: 58: ConfiguraLCD(4);
+[e = _UTRDIS -> -> 1 `i `b ]
+[; ;Proyecto.c: 56: CCP1CON = 0b00001100;
+"56
+[e = _CCP1CON -> -> 12 `i `uc ]
+[; ;Proyecto.c: 57: T2CON = 0b00000010;
+"57
+[e = _T2CON -> -> 2 `i `uc ]
+[; ;Proyecto.c: 58: TMR2 = 0;
 "58
-[e ( _ConfiguraLCD (1 -> -> 4 `i `uc ]
-[; ;Proyecto.c: 59: InicializaLCD();
+[e = _TMR2 -> -> 0 `i `uc ]
+[; ;Proyecto.c: 59: PR2 = 249;
 "59
-[e ( _InicializaLCD ..  ]
-[; ;Proyecto.c: 60: DireccionaLCD(0x80);
+[e = _PR2 -> -> 249 `i `uc ]
+[; ;Proyecto.c: 60: CCPR1L = 0;
 "60
-[e ( _DireccionaLCD (1 -> -> 128 `i `uc ]
-[; ;Proyecto.c: 61: MensajeLCD_Var("Bienvenido al");
-"61
-[e ( _MensajeLCD_Var (1 -> :s 1C `*uc ]
-[; ;Proyecto.c: 62: DireccionaLCD(0xC0);
-"62
-[e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
-[; ;Proyecto.c: 63: MensajeLCD_Var("sistema de");
+[e = _CCPR1L -> -> 0 `i `uc ]
+[; ;Proyecto.c: 63: ConfiguraLCD(4);
 "63
-[e ( _MensajeLCD_Var (1 -> :s 2C `*uc ]
-[; ;Proyecto.c: 64: _delay((unsigned long)((1500)*(8000000/4000.0)));
+[e ( _ConfiguraLCD (1 -> -> 4 `i `uc ]
+[; ;Proyecto.c: 64: InicializaLCD();
 "64
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 65: BorraLCD();
+[e ( _InicializaLCD ..  ]
+[; ;Proyecto.c: 65: DireccionaLCD(0x80);
 "65
-[e ( _BorraLCD ..  ]
-[; ;Proyecto.c: 66: MensajeLCD_Var("deteccion de");
+[e ( _DireccionaLCD (1 -> -> 128 `i `uc ]
+[; ;Proyecto.c: 66: MensajeLCD_Var("Bienvenido al");
 "66
-[e ( _MensajeLCD_Var (1 -> :s 3C `*uc ]
+[e ( _MensajeLCD_Var (1 -> :s 1C `*uc ]
 [; ;Proyecto.c: 67: DireccionaLCD(0xC0);
 "67
 [e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
-[; ;Proyecto.c: 68: MensajeLCD_Var("distancias");
+[; ;Proyecto.c: 68: MensajeLCD_Var("sistema de");
 "68
-[e ( _MensajeLCD_Var (1 -> :s 4C `*uc ]
+[e ( _MensajeLCD_Var (1 -> :s 2C `*uc ]
 [; ;Proyecto.c: 69: _delay((unsigned long)((1500)*(8000000/4000.0)));
 "69
 [e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
 [; ;Proyecto.c: 70: BorraLCD();
 "70
 [e ( _BorraLCD ..  ]
-[; ;Proyecto.c: 71: MensajeLCD_Var("Iniciando");
+[; ;Proyecto.c: 71: MensajeLCD_Var("deteccion de");
 "71
-[e ( _MensajeLCD_Var (1 -> :s 5C `*uc ]
-[; ;Proyecto.c: 72: _delay((unsigned long)((500)*(8000000/4000.0)));
+[e ( _MensajeLCD_Var (1 -> :s 3C `*uc ]
+[; ;Proyecto.c: 72: DireccionaLCD(0xC0);
 "72
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 73: EscribeLCD_c('.');
+[e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
+[; ;Proyecto.c: 73: MensajeLCD_Var("distancias");
 "73
-[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
-[; ;Proyecto.c: 74: _delay((unsigned long)((500)*(8000000/4000.0)));
+[e ( _MensajeLCD_Var (1 -> :s 4C `*uc ]
+[; ;Proyecto.c: 74: _delay((unsigned long)((1500)*(8000000/4000.0)));
 "74
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 75: EscribeLCD_c('.');
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 75: BorraLCD();
 "75
-[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
-[; ;Proyecto.c: 76: _delay((unsigned long)((500)*(8000000/4000.0)));
-"76
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 77: EscribeLCD_c('.');
-"77
-[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
-[; ;Proyecto.c: 78: _delay((unsigned long)((500)*(8000000/4000.0)));
-"78
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;Proyecto.c: 79: BorraLCD();
-"79
 [e ( _BorraLCD ..  ]
-[; ;Proyecto.c: 80: MensajeLCD_Var("Distancia:");
-"80
+[; ;Proyecto.c: 76: MensajeLCD_Var("Ingrese Dist. de");
+"76
+[e ( _MensajeLCD_Var (1 -> :s 5C `*uc ]
+[; ;Proyecto.c: 77: DireccionaLCD(0xC0);
+"77
+[e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
+[; ;Proyecto.c: 78: MensajeLCD_Var("alarma: ");
+"78
 [e ( _MensajeLCD_Var (1 -> :s 6C `*uc ]
-[; ;Proyecto.c: 82: TMR2ON=1;
+[; ;Proyecto.c: 79: Recibir_Cadena(Minimo_Consola, 5);
+"79
+[e ( _Recibir_Cadena (2 , -> &U _Minimo_Consola `*uc -> -> 5 `i `ui ]
+[; ;Proyecto.c: 80: MensajeLCD_Var("cm");
+"80
+[e ( _MensajeLCD_Var (1 -> :s 7C `*uc ]
+[; ;Proyecto.c: 81: EscribeLCD_c(' ');
+"81
+[e ( _EscribeLCD_c (1 -> -> 32 `ui `uc ]
+[; ;Proyecto.c: 82: _delay((unsigned long)((1500)*(8000000/4000.0)));
 "82
-[e = _TMR2ON -> -> 1 `i `b ]
-[; ;Proyecto.c: 83: while (1) {
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 83: BorraLCD();
 "83
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 84: MensajeLCD_Var("Iniciando");
+"84
+[e ( _MensajeLCD_Var (1 -> :s 8C `*uc ]
+[; ;Proyecto.c: 85: _delay((unsigned long)((500)*(8000000/4000.0)));
+"85
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 86: EscribeLCD_c('.');
+"86
+[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
+[; ;Proyecto.c: 87: _delay((unsigned long)((500)*(8000000/4000.0)));
+"87
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 88: EscribeLCD_c('.');
+"88
+[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
+[; ;Proyecto.c: 89: _delay((unsigned long)((500)*(8000000/4000.0)));
+"89
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 90: EscribeLCD_c('.');
+"90
+[e ( _EscribeLCD_c (1 -> -> 46 `ui `uc ]
+[; ;Proyecto.c: 91: _delay((unsigned long)((500)*(8000000/4000.0)));
+"91
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 92: BorraLCD();
+"92
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 93: MensajeLCD_Var("Distancia:");
+"93
+[e ( _MensajeLCD_Var (1 -> :s 9C `*uc ]
+[; ;Proyecto.c: 95: TMR2ON = 1;
+"95
+[e = _TMR2ON -> -> 1 `i `b ]
+[; ;Proyecto.c: 96: while (1) {
+"96
 [e :U 398 ]
 {
-[; ;Proyecto.c: 84: CCP2CON = 0b00000100;
-"84
+[; ;Proyecto.c: 97: CCP2CON = 0b00000100;
+"97
 [e = _CCP2CON -> -> 4 `i `uc ]
-[; ;Proyecto.c: 85: TMR1 = 0;
-"85
+[; ;Proyecto.c: 98: TMR1 = 0;
+"98
 [e = _TMR1 -> -> 0 `i `us ]
-[; ;Proyecto.c: 86: CCP2IF = 0;
-"86
+[; ;Proyecto.c: 99: CCP2IF = 0;
+"99
 [e = _CCP2IF -> -> 0 `i `b ]
-[; ;Proyecto.c: 87: RC0 = 1;
-"87
+[; ;Proyecto.c: 100: RC0 = 1;
+"100
 [e = _RC0 -> -> 1 `i `b ]
-[; ;Proyecto.c: 88: _delay((unsigned long)((10)*(8000000/4000000.0)));
-"88
+[; ;Proyecto.c: 101: _delay((unsigned long)((10)*(8000000/4000000.0)));
+"101
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-[; ;Proyecto.c: 89: RC0 = 0;
-"89
+[; ;Proyecto.c: 102: RC0 = 0;
+"102
 [e = _RC0 -> -> 0 `i `b ]
-[; ;Proyecto.c: 90: while (RC1 == 0);
-"90
+[; ;Proyecto.c: 103: while (RC1 == 0);
+"103
 [e $U 400  ]
 [e :U 401 ]
 [e :U 400 ]
 [e $ == -> _RC1 `i -> 0 `i 401  ]
 [e :U 402 ]
-[; ;Proyecto.c: 97: TMR1ON = 1;
-"97
+[; ;Proyecto.c: 110: TMR1ON = 1;
+"110
 [e = _TMR1ON -> -> 1 `i `b ]
-[; ;Proyecto.c: 98: while (CCP2IF == 0);
-"98
+[; ;Proyecto.c: 111: while (CCP2IF == 0);
+"111
 [e $U 403  ]
 [e :U 404 ]
 [e :U 403 ]
 [e $ == -> _CCP2IF `i -> 0 `i 404  ]
 [e :U 405 ]
-[; ;Proyecto.c: 99: TMR1ON = 0;
-"99
+[; ;Proyecto.c: 112: TMR1ON = 0;
+"112
 [e = _TMR1ON -> -> 0 `i `b ]
-[; ;Proyecto.c: 100: Distancia = CCPR2 / 58;
-"100
+[; ;Proyecto.c: 113: Distancia = CCPR2 / 58;
+"113
 [e = _Distancia -> / -> _CCPR2 `ui -> -> 58 `i `ui `uc ]
-[; ;Proyecto.c: 102: if (!RE1) {
-"102
-[e $ ! ! _RE1 406  ]
-{
-[; ;Proyecto.c: 103: TransmitirDatos(Minimo);
-"103
+[; ;Proyecto.c: 114: SaveData(0, Distancia);
+"114
+[e ( _SaveData (2 , -> -> 0 `i `ui _Distancia ]
+[; ;Proyecto.c: 116: TransmitirDatos(Minimo);
+"116
 [e ( _TransmitirDatos (1 -> _Minimo `ui ]
-"105
+[; ;Proyecto.c: 118: if (Distancia <= Minimo) {
+"118
+[e $ ! <= -> _Distancia `i _Minimo 406  ]
+{
+[; ;Proyecto.c: 119: CCPR1L = 125;
+"119
+[e = _CCPR1L -> -> 125 `i `uc ]
+"120
 }
-[; ;Proyecto.c: 105: } else {
+[; ;Proyecto.c: 120: } else {
 [e $U 407  ]
 [e :U 406 ]
 {
-[; ;Proyecto.c: 106: TransmitirDatos(Minimo);
-"106
-[e ( _TransmitirDatos (1 -> _Minimo `ui ]
-"108
+[; ;Proyecto.c: 121: CCPR1L = 0;
+"121
+[e = _CCPR1L -> -> 0 `i `uc ]
+"122
 }
 [e :U 407 ]
-[; ;Proyecto.c: 108: }
-[; ;Proyecto.c: 110: if (Distancia<=Minimo){
-"110
-[e $ ! <= -> _Distancia `i -> _Minimo `i 408  ]
-{
-[; ;Proyecto.c: 111: CCPR1L=125;
-"111
-[e = _CCPR1L -> -> 125 `i `uc ]
-"112
-}
-[; ;Proyecto.c: 112: }else{
-[e $U 409  ]
-[e :U 408 ]
-{
-[; ;Proyecto.c: 113: CCPR1L=0;
-"113
-[e = _CCPR1L -> -> 0 `i `uc ]
-"114
-}
-[e :U 409 ]
-"119
+"123
 }
 [e :U 397 ]
-"83
+"96
 [e $U 398  ]
 [e :U 399 ]
-[; ;Proyecto.c: 114: }
-[; ;Proyecto.c: 119: }
-[; ;Proyecto.c: 120: }
-"120
+[; ;Proyecto.c: 122: }
+[; ;Proyecto.c: 123: }
+[; ;Proyecto.c: 124: }
+"124
 [e :UE 396 ]
 }
-"122
+"126
 [v _Transmitir `(v ~T0 @X0 1 ef1`uc ]
 {
-[; ;Proyecto.c: 122: void Transmitir(unsigned char BufferT) {
+[; ;Proyecto.c: 126: void Transmitir(unsigned char BufferT) {
 [e :U _Transmitir ]
 [v _BufferT `uc ~T0 @X0 1 r1 ]
 [f ]
-[; ;Proyecto.c: 123: while (TRMT == 0);
-"123
-[e $U 411  ]
-[e :U 412 ]
-[e :U 411 ]
-[e $ == -> _TRMT `i -> 0 `i 412  ]
-[e :U 413 ]
-[; ;Proyecto.c: 124: TXREG = BufferT;
-"124
-[e = _TXREG _BufferT ]
-[; ;Proyecto.c: 125: }
-"125
-[e :UE 410 ]
-}
+[; ;Proyecto.c: 127: while (TRMT == 0);
 "127
+[e $U 409  ]
+[e :U 410 ]
+[e :U 409 ]
+[e $ == -> _TRMT `i -> 0 `i 410  ]
+[e :U 411 ]
+[; ;Proyecto.c: 128: TXREG = BufferT;
+"128
+[e = _TXREG _BufferT ]
+[; ;Proyecto.c: 129: }
+"129
+[e :UE 408 ]
+}
+"131
 [v _Recibir `(ui ~T0 @X0 1 ef ]
 {
-[; ;Proyecto.c: 127: unsigned int Recibir(void) {
+[; ;Proyecto.c: 131: unsigned int Recibir(void) {
 [e :U _Recibir ]
 [f ]
-[; ;Proyecto.c: 128: while (RCIF == 0);
-"128
-[e $U 415  ]
-[e :U 416 ]
-[e :U 415 ]
-[e $ == -> _RCIF `i -> 0 `i 416  ]
-[e :U 417 ]
-[; ;Proyecto.c: 129: return RCREG;
-"129
-[e ) -> _RCREG `ui ]
-[e $UE 414  ]
-[; ;Proyecto.c: 130: }
-"130
-[e :UE 414 ]
-}
+[; ;Proyecto.c: 132: while (RCIF == 0);
 "132
+[e $U 413  ]
+[e :U 414 ]
+[e :U 413 ]
+[e $ == -> _RCIF `i -> 0 `i 414  ]
+[e :U 415 ]
+[; ;Proyecto.c: 133: if (OERR == 1) {
+"133
+[e $ ! == -> _OERR `i -> 1 `i 416  ]
+{
+[; ;Proyecto.c: 134: CREN = 0;
+"134
+[e = _CREN -> -> 0 `i `b ]
+[; ;Proyecto.c: 135: CREN = 1;
+"135
+[e = _CREN -> -> 1 `i `b ]
+"136
+}
+[e :U 416 ]
+[; ;Proyecto.c: 136: }
+[; ;Proyecto.c: 137: RCIF = 0;
+"137
+[e = _RCIF -> -> 0 `i `b ]
+[; ;Proyecto.c: 138: return RCREG;
+"138
+[e ) -> _RCREG `ui ]
+[e $UE 412  ]
+[; ;Proyecto.c: 139: }
+"139
+[e :UE 412 ]
+}
+"141
+[v _Recibir_Cadena `(v ~T0 @X0 1 ef2`*uc`ui ]
+{
+[; ;Proyecto.c: 141: void Recibir_Cadena(char* Buffer, unsigned int tamano) {
+[e :U _Recibir_Cadena ]
+[v _Buffer `*uc ~T0 @X0 1 r1 ]
+[v _tamano `ui ~T0 @X0 1 r2 ]
+[f ]
+"142
+[v _cont_buf `ui ~T0 @X0 1 a ]
+[; ;Proyecto.c: 142: unsigned int cont_buf = 0;
+[e = _cont_buf -> -> 0 `i `ui ]
+"143
+[v _c `uc ~T0 @X0 1 a ]
+"144
+[v _valor `i ~T0 @X0 1 a ]
+[; ;Proyecto.c: 143: char c;
+[; ;Proyecto.c: 144: int valor = 0;
+[e = _valor -> 0 `i ]
+[; ;Proyecto.c: 145: Minimo = 0;
+"145
+[e = _Minimo -> 0 `i ]
+[; ;Proyecto.c: 146: for (int i = 0; i < 3; i++) {
+"146
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 418  ]
+[e $U 419  ]
+[e :U 418 ]
+{
+[; ;Proyecto.c: 147: c = Recibir();
+"147
+[e = _c -> ( _Recibir ..  `uc ]
+[; ;Proyecto.c: 148: Buffer[i] = c;
+"148
+[e = *U + _Buffer * -> _i `x -> -> # *U _Buffer `i `x _c ]
+[; ;Proyecto.c: 149: valor = Buffer[i] - 48;
+"149
+[e = _valor - -> *U + _Buffer * -> _i `x -> -> # *U _Buffer `i `x `i -> 48 `i ]
+[; ;Proyecto.c: 150: EscribeLCD_c(c);
+"150
+[e ( _EscribeLCD_c (1 _c ]
+[; ;Proyecto.c: 151: if (i == 0) {
+"151
+[e $ ! == _i -> 0 `i 421  ]
+{
+[; ;Proyecto.c: 152: valor = valor * 100;
+"152
+[e = _valor * _valor -> 100 `i ]
+[; ;Proyecto.c: 153: Minimo = Minimo + valor;
+"153
+[e = _Minimo + _Minimo _valor ]
+"154
+}
+[; ;Proyecto.c: 154: } else if (i == 1) {
+[e $U 422  ]
+[e :U 421 ]
+[e $ ! == _i -> 1 `i 423  ]
+{
+[; ;Proyecto.c: 155: valor = valor * 10;
+"155
+[e = _valor * _valor -> 10 `i ]
+[; ;Proyecto.c: 156: Minimo = Minimo + valor;
+"156
+[e = _Minimo + _Minimo _valor ]
+"157
+}
+[; ;Proyecto.c: 157: } else if (i == 2) {
+[e $U 424  ]
+[e :U 423 ]
+[e $ ! == _i -> 2 `i 425  ]
+{
+[; ;Proyecto.c: 158: Minimo = Minimo + valor;
+"158
+[e = _Minimo + _Minimo _valor ]
+"159
+}
+[e :U 425 ]
+"160
+[e :U 424 ]
+[e :U 422 ]
+}
+"146
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 418  ]
+[e :U 419 ]
+"160
+}
+[; ;Proyecto.c: 159: }
+[; ;Proyecto.c: 160: }
+[; ;Proyecto.c: 161: Buffer[tamano - 2] = '\0';
+"161
+[e = *U + _Buffer * -> - _tamano -> -> 2 `i `ui `ux -> -> # *U _Buffer `ui `ux -> -> 0 `ui `uc ]
+[; ;Proyecto.c: 162: cont_buf = 0;
+"162
+[e = _cont_buf -> -> 0 `i `ui ]
+[; ;Proyecto.c: 163: }
+"163
+[e :UE 417 ]
+}
+"165
 [v _TransmitirDatos `(v ~T0 @X0 1 ef1`ui ]
 {
-[; ;Proyecto.c: 132: void TransmitirDatos(unsigned int Minimo) {
+[; ;Proyecto.c: 165: void TransmitirDatos(unsigned int Minimo) {
 [e :U _TransmitirDatos ]
 [v _Minimo `ui ~T0 @X0 1 r1 ]
 [f ]
-"133
+"166
 [v _DistC `ui ~T0 @X0 1 a ]
-[; ;Proyecto.c: 133: unsigned int DistC = Distancia, MinC = Minimo;
+[; ;Proyecto.c: 166: unsigned int DistC = Distancia, MinC = Minimo;
 [e = _DistC -> _Distancia `ui ]
 [v _MinC `ui ~T0 @X0 1 a ]
 [e = _MinC _Minimo ]
-[; ;Proyecto.c: 134: Transmitir('D');
-"134
-[e ( _Transmitir (1 -> -> 68 `ui `uc ]
-[; ;Proyecto.c: 135: Transmitir('i');
-"135
-[e ( _Transmitir (1 -> -> 105 `ui `uc ]
-[; ;Proyecto.c: 136: Transmitir('s');
-"136
-[e ( _Transmitir (1 -> -> 115 `ui `uc ]
-[; ;Proyecto.c: 137: Transmitir('t');
-"137
-[e ( _Transmitir (1 -> -> 116 `ui `uc ]
-[; ;Proyecto.c: 138: Transmitir('a');
-"138
-[e ( _Transmitir (1 -> -> 97 `ui `uc ]
-[; ;Proyecto.c: 139: Transmitir('n');
-"139
-[e ( _Transmitir (1 -> -> 110 `ui `uc ]
-[; ;Proyecto.c: 140: Transmitir('c');
-"140
-[e ( _Transmitir (1 -> -> 99 `ui `uc ]
-[; ;Proyecto.c: 141: Transmitir('i');
-"141
-[e ( _Transmitir (1 -> -> 105 `ui `uc ]
-[; ;Proyecto.c: 142: Transmitir('a');
-"142
-[e ( _Transmitir (1 -> -> 97 `ui `uc ]
-[; ;Proyecto.c: 143: Transmitir(':');
-"143
-[e ( _Transmitir (1 -> -> 58 `ui `uc ]
-[; ;Proyecto.c: 144: Transmitir(' ');
-"144
-[e ( _Transmitir (1 -> -> 32 `ui `uc ]
-[; ;Proyecto.c: 146: Transmitir(Distancia / 100 + 48);
-"146
-[e ( _Transmitir (1 -> + / -> _Distancia `i -> 100 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 147: Transmitir((Distancia % 100) / 10 + 48);
-"147
-[e ( _Transmitir (1 -> + / % -> _Distancia `i -> 100 `i -> 10 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 148: Transmitir(Distancia % 10 + 48);
-"148
-[e ( _Transmitir (1 -> + % -> _Distancia `i -> 10 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 149: Transmitir('c');
-"149
-[e ( _Transmitir (1 -> -> 99 `ui `uc ]
-[; ;Proyecto.c: 150: Transmitir('m');
-"150
-[e ( _Transmitir (1 -> -> 109 `ui `uc ]
-[; ;Proyecto.c: 151: Transmitir(' ');
-"151
-[e ( _Transmitir (1 -> -> 32 `ui `uc ]
-[; ;Proyecto.c: 152: Transmitir('\n');
-"152
-[e ( _Transmitir (1 -> -> 10 `ui `uc ]
-[; ;Proyecto.c: 154: DireccionaLCD(0xC7);
-"154
-[e ( _DireccionaLCD (1 -> -> 199 `i `uc ]
-[; ;Proyecto.c: 155: EscribeLCD_c(Distancia / 100 + 48);
-"155
-[e ( _EscribeLCD_c (1 -> + / -> _Distancia `i -> 100 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 156: EscribeLCD_c((Distancia % 100) / 10 + 48);
-"156
-[e ( _EscribeLCD_c (1 -> + / % -> _Distancia `i -> 100 `i -> 10 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 157: EscribeLCD_c(Distancia % 10 + 48);
-"157
-[e ( _EscribeLCD_c (1 -> + % -> _Distancia `i -> 10 `i -> 48 `i `uc ]
-[; ;Proyecto.c: 158: MensajeLCD_Var("cm");
-"158
-[e ( _MensajeLCD_Var (1 -> :s 7C `*uc ]
-[; ;Proyecto.c: 159: EscribeLCD_c(' ');
-"159
-[e ( _EscribeLCD_c (1 -> -> 32 `ui `uc ]
-[; ;Proyecto.c: 160: }
-"160
-[e :UE 418 ]
-}
-"162
-[v _LeerTeclado `(uc ~T0 @X0 1 ef ]
-{
-[; ;Proyecto.c: 162: unsigned char LeerTeclado(void) {
-[e :U _LeerTeclado ]
-[f ]
-[; ;Proyecto.c: 163: LATB = 0b11111110;
-"163
-[e = _LATB -> -> 254 `i `uc ]
-[; ;Proyecto.c: 164: if (RB5 == 0) return '=';
-"164
-[e $ ! == -> _RB5 `i -> 0 `i 420  ]
-[e ) -> -> 61 `ui `uc ]
-[e $UE 419  ]
-[e $U 421  ]
-"165
-[e :U 420 ]
-[; ;Proyecto.c: 165: else if (RB6 == 0) return '0';
-[e $ ! == -> _RB6 `i -> 0 `i 422  ]
-[e ) -> -> 48 `ui `uc ]
-[e $UE 419  ]
-[e $U 423  ]
-"166
-[e :U 422 ]
-[; ;Proyecto.c: 166: else if (RB7 == 0) return 'C';
-[e $ ! == -> _RB7 `i -> 0 `i 424  ]
-[e ) -> -> 67 `ui `uc ]
-[e $UE 419  ]
-[e $U 425  ]
+[; ;Proyecto.c: 167: Transmitir('D');
 "167
-[e :U 424 ]
-[; ;Proyecto.c: 167: else {
-{
-[; ;Proyecto.c: 168: LATB = 0b11111101;
+[e ( _Transmitir (1 -> -> 68 `ui `uc ]
+[; ;Proyecto.c: 168: Transmitir('i');
 "168
-[e = _LATB -> -> 253 `i `uc ]
-[; ;Proyecto.c: 169: if (RB5 == 0) return '9';
+[e ( _Transmitir (1 -> -> 105 `ui `uc ]
+[; ;Proyecto.c: 169: Transmitir('s');
 "169
-[e $ ! == -> _RB5 `i -> 0 `i 426  ]
-[e ) -> -> 57 `ui `uc ]
-[e $UE 419  ]
-[e $U 427  ]
+[e ( _Transmitir (1 -> -> 115 `ui `uc ]
+[; ;Proyecto.c: 170: Transmitir('t');
 "170
-[e :U 426 ]
-[; ;Proyecto.c: 170: else if (RB6 == 0) return '8';
-[e $ ! == -> _RB6 `i -> 0 `i 428  ]
-[e ) -> -> 56 `ui `uc ]
-[e $UE 419  ]
-[e $U 429  ]
+[e ( _Transmitir (1 -> -> 116 `ui `uc ]
+[; ;Proyecto.c: 171: Transmitir('a');
 "171
-[e :U 428 ]
-[; ;Proyecto.c: 171: else if (RB7 == 0) return '7';
-[e $ ! == -> _RB7 `i -> 0 `i 430  ]
-[e ) -> -> 55 `ui `uc ]
-[e $UE 419  ]
-[e $U 431  ]
+[e ( _Transmitir (1 -> -> 97 `ui `uc ]
+[; ;Proyecto.c: 172: Transmitir('n');
 "172
-[e :U 430 ]
-[; ;Proyecto.c: 172: else {
-{
-[; ;Proyecto.c: 173: LATB = 0b11111011;
+[e ( _Transmitir (1 -> -> 110 `ui `uc ]
+[; ;Proyecto.c: 173: Transmitir('c');
 "173
-[e = _LATB -> -> 251 `i `uc ]
-[; ;Proyecto.c: 174: if (RB5 == 0) return '6';
+[e ( _Transmitir (1 -> -> 99 `ui `uc ]
+[; ;Proyecto.c: 174: Transmitir('i');
 "174
-[e $ ! == -> _RB5 `i -> 0 `i 432  ]
-[e ) -> -> 54 `ui `uc ]
-[e $UE 419  ]
-[e $U 433  ]
+[e ( _Transmitir (1 -> -> 105 `ui `uc ]
+[; ;Proyecto.c: 175: Transmitir('a');
 "175
-[e :U 432 ]
-[; ;Proyecto.c: 175: else if (RB6 == 0) return '5';
-[e $ ! == -> _RB6 `i -> 0 `i 434  ]
-[e ) -> -> 53 `ui `uc ]
-[e $UE 419  ]
-[e $U 435  ]
+[e ( _Transmitir (1 -> -> 97 `ui `uc ]
+[; ;Proyecto.c: 176: Transmitir(':');
 "176
-[e :U 434 ]
-[; ;Proyecto.c: 176: else if (RB7 == 0) return '4';
-[e $ ! == -> _RB7 `i -> 0 `i 436  ]
-[e ) -> -> 52 `ui `uc ]
-[e $UE 419  ]
-[e $U 437  ]
+[e ( _Transmitir (1 -> -> 58 `ui `uc ]
+[; ;Proyecto.c: 177: Transmitir(' ');
 "177
-[e :U 436 ]
-[; ;Proyecto.c: 177: else {
-{
-[; ;Proyecto.c: 178: LATB = 0b11110111;
-"178
-[e = _LATB -> -> 247 `i `uc ]
-[; ;Proyecto.c: 179: if (RB5 == 0) return '3';
+[e ( _Transmitir (1 -> -> 32 `ui `uc ]
+[; ;Proyecto.c: 179: Transmitir(Distancia / 100 + 48);
 "179
-[e $ ! == -> _RB5 `i -> 0 `i 438  ]
-[e ) -> -> 51 `ui `uc ]
-[e $UE 419  ]
-[e $U 439  ]
+[e ( _Transmitir (1 -> + / -> _Distancia `i -> 100 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 180: Transmitir((Distancia % 100) / 10 + 48);
 "180
-[e :U 438 ]
-[; ;Proyecto.c: 180: else if (RB6 == 0) return '2';
-[e $ ! == -> _RB6 `i -> 0 `i 440  ]
-[e ) -> -> 50 `ui `uc ]
-[e $UE 419  ]
-[e $U 441  ]
+[e ( _Transmitir (1 -> + / % -> _Distancia `i -> 100 `i -> 10 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 181: Transmitir(Distancia % 10 + 48);
 "181
-[e :U 440 ]
-[; ;Proyecto.c: 181: else if (RB7 == 0) return '1';
-[e $ ! == -> _RB7 `i -> 0 `i 442  ]
-[e ) -> -> 49 `ui `uc ]
-[e $UE 419  ]
-[e :U 442 ]
+[e ( _Transmitir (1 -> + % -> _Distancia `i -> 10 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 182: Transmitir('c');
 "182
-[e :U 441 ]
-[e :U 439 ]
-}
-[e :U 437 ]
-[e :U 435 ]
-[e :U 433 ]
+[e ( _Transmitir (1 -> -> 99 `ui `uc ]
+[; ;Proyecto.c: 183: Transmitir('m');
 "183
-}
-[e :U 431 ]
-[e :U 429 ]
-[e :U 427 ]
+[e ( _Transmitir (1 -> -> 109 `ui `uc ]
+[; ;Proyecto.c: 184: Transmitir(' ');
 "184
-}
-[e :U 425 ]
-[e :U 423 ]
-[e :U 421 ]
-[; ;Proyecto.c: 182: }
-[; ;Proyecto.c: 183: }
-[; ;Proyecto.c: 184: }
-[; ;Proyecto.c: 185: LATB = 0b11110000;
+[e ( _Transmitir (1 -> -> 32 `ui `uc ]
+[; ;Proyecto.c: 185: Transmitir('\n');
 "185
-[e = _LATB -> -> 240 `i `uc ]
-[; ;Proyecto.c: 186: }
-"186
-[e :UE 419 ]
+[e ( _Transmitir (1 -> -> 10 `ui `uc ]
+[; ;Proyecto.c: 187: DireccionaLCD(0xC7);
+"187
+[e ( _DireccionaLCD (1 -> -> 199 `i `uc ]
+[; ;Proyecto.c: 188: EscribeLCD_c(Distancia / 100 + 48);
+"188
+[e ( _EscribeLCD_c (1 -> + / -> _Distancia `i -> 100 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 189: EscribeLCD_c((Distancia % 100) / 10 + 48);
+"189
+[e ( _EscribeLCD_c (1 -> + / % -> _Distancia `i -> 100 `i -> 10 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 190: EscribeLCD_c(Distancia % 10 + 48);
+"190
+[e ( _EscribeLCD_c (1 -> + % -> _Distancia `i -> 10 `i -> 48 `i `uc ]
+[; ;Proyecto.c: 191: MensajeLCD_Var("cm");
+"191
+[e ( _MensajeLCD_Var (1 -> :s 10C `*uc ]
+[; ;Proyecto.c: 192: EscribeLCD_c(' ');
+"192
+[e ( _EscribeLCD_c (1 -> -> 32 `ui `uc ]
+[; ;Proyecto.c: 193: }
+"193
+[e :UE 426 ]
+}
+"195
+[v _SaveData `(v ~T0 @X0 1 ef2`ui`uc ]
+{
+[; ;Proyecto.c: 195: void SaveData(unsigned int dir, unsigned char dato) {
+[e :U _SaveData ]
+[v _dir `ui ~T0 @X0 1 r1 ]
+[v _dato `uc ~T0 @X0 1 r2 ]
+[f ]
+[; ;Proyecto.c: 196: EEADR = dir;
+"196
+[e = _EEADR -> _dir `uc ]
+[; ;Proyecto.c: 197: EEDATA = dato;
+"197
+[e = _EEDATA _dato ]
+[; ;Proyecto.c: 199: EEPGD = 0;
+"199
+[e = _EEPGD -> -> 0 `i `b ]
+[; ;Proyecto.c: 200: CFGS = 0;
+"200
+[e = _CFGS -> -> 0 `i `b ]
+[; ;Proyecto.c: 201: WREN = 1;
+"201
+[e = _WREN -> -> 1 `i `b ]
+[; ;Proyecto.c: 203: GIE = 0;
+"203
+[e = _GIE -> -> 0 `i `b ]
+[; ;Proyecto.c: 205: EECON2 = 0x55;
+"205
+[e = _EECON2 -> -> 85 `i `uc ]
+[; ;Proyecto.c: 206: EECON2 = 0xAA;
+"206
+[e = _EECON2 -> -> 170 `i `uc ]
+[; ;Proyecto.c: 207: WR = 1;
+"207
+[e = _WR -> -> 1 `i `b ]
+[; ;Proyecto.c: 208: GIE = 1;
+"208
+[e = _GIE -> -> 1 `i `b ]
+[; ;Proyecto.c: 209: while (!EEIF);
+"209
+[e $U 428  ]
+[e :U 429 ]
+[e :U 428 ]
+[e $ ! _EEIF 429  ]
+[e :U 430 ]
+[; ;Proyecto.c: 210: EEIF = 0;
+"210
+[e = _EEIF -> -> 0 `i `b ]
+[; ;Proyecto.c: 211: WREN = 0;
+"211
+[e = _WREN -> -> 0 `i `b ]
+[; ;Proyecto.c: 213: }
+"213
+[e :UE 427 ]
+}
+"215
+[v _ReadData `(uc ~T0 @X0 1 ef1`ui ]
+{
+[; ;Proyecto.c: 215: unsigned char ReadData(unsigned int dir) {
+[e :U _ReadData ]
+[v _dir `ui ~T0 @X0 1 r1 ]
+[f ]
+[; ;Proyecto.c: 216: EEADR = dir;
+"216
+[e = _EEADR -> _dir `uc ]
+[; ;Proyecto.c: 217: EEPGD = 0;
+"217
+[e = _EEPGD -> -> 0 `i `b ]
+[; ;Proyecto.c: 218: CFGS = 0;
+"218
+[e = _CFGS -> -> 0 `i `b ]
+[; ;Proyecto.c: 219: RD = 1;
+"219
+[e = _RD -> -> 1 `i `b ]
+[; ;Proyecto.c: 221: return EEDATA;
+"221
+[e ) _EEDATA ]
+[e $UE 431  ]
+[; ;Proyecto.c: 222: }
+"222
+[e :UE 431 ]
 }
 [v $root$_ISR `(v ~T0 @X0 0 e ]
-"188
+"224
 [v _ISR `(v ~T48 @X0 1 ef ]
 {
-[; ;Proyecto.c: 188: void __interrupt() ISR(void) {
+[; ;Proyecto.c: 224: void __interrupt() ISR(void) {
 [e :U _ISR ]
 [f ]
-[; ;Proyecto.c: 213: if (RCIF==1) {
-"213
-[e $ ! == -> _RCIF `i -> 1 `i 444  ]
+[; ;Proyecto.c: 225: if (CCP2IF == 1) {
+"225
+[e $ ! == -> _CCP2IF `i -> 1 `i 433  ]
 {
-[; ;Proyecto.c: 214: en_entrada=1;
-"214
-[e = _en_entrada -> -> 1 `i `uc ]
-[; ;Proyecto.c: 215: Minimo = Recibir();
-"215
-[e = _Minimo -> ( _Recibir ..  `uc ]
-[; ;Proyecto.c: 217: MensajeLCD_Var(Minimo);
-"217
-[e ( _MensajeLCD_Var (1 -> _Minimo `*uc ]
-[; ;Proyecto.c: 218: _delay((unsigned long)((1000)*(8000000/4000.0)));
-"218
+[; ;Proyecto.c: 226: if (INT0IF == 1) {
+"226
+[e $ ! == -> _INT0IF `i -> 1 `i 434  ]
+{
+[; ;Proyecto.c: 227: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"227
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"219
+[; ;Proyecto.c: 228: BorraLCD();
+"228
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 229: MensajeLCD_Var("Nueva dist. de");
+"229
+[e ( _MensajeLCD_Var (1 -> :s 11C `*uc ]
+[; ;Proyecto.c: 230: DireccionaLCD(0xC0);
+"230
+[e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
+[; ;Proyecto.c: 231: MensajeLCD_Var("alarma: ");
+"231
+[e ( _MensajeLCD_Var (1 -> :s 12C `*uc ]
+[; ;Proyecto.c: 232: Recibir_Cadena(Minimo_Consola, 5);
+"232
+[e ( _Recibir_Cadena (2 , -> &U _Minimo_Consola `*uc -> -> 5 `i `ui ]
+[; ;Proyecto.c: 233: MensajeLCD_Var("cm");
+"233
+[e ( _MensajeLCD_Var (1 -> :s 13C `*uc ]
+[; ;Proyecto.c: 234: EscribeLCD_c(' ');
+"234
+[e ( _EscribeLCD_c (1 -> -> 32 `ui `uc ]
+[; ;Proyecto.c: 235: _delay((unsigned long)((2000)*(8000000/4000.0)));
+"235
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 236: BorraLCD();
+"236
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 237: MensajeLCD_Var("Nueva Distancia");
+"237
+[e ( _MensajeLCD_Var (1 -> :s 14C `*uc ]
+[; ;Proyecto.c: 238: DireccionaLCD(0xC0);
+"238
+[e ( _DireccionaLCD (1 -> -> 192 `i `uc ]
+[; ;Proyecto.c: 239: MensajeLCD_Var("Configurada");
+"239
+[e ( _MensajeLCD_Var (1 -> :s 15C `*uc ]
+[; ;Proyecto.c: 240: _delay((unsigned long)((1000)*(8000000/4000.0)));
+"240
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;Proyecto.c: 241: BorraLCD();
+"241
+[e ( _BorraLCD ..  ]
+[; ;Proyecto.c: 242: MensajeLCD_Var("Distancia:");
+"242
+[e ( _MensajeLCD_Var (1 -> :s 16C `*uc ]
+[; ;Proyecto.c: 243: INT0IF = 0;
+"243
+[e = _INT0IF -> -> 0 `i `b ]
+"244
 }
-[e :U 444 ]
-[; ;Proyecto.c: 219: }
-[; ;Proyecto.c: 220: }
-"220
-[e :UE 443 ]
+[e :U 434 ]
+[; ;Proyecto.c: 244: }
+[; ;Proyecto.c: 245: CCP2IF = 0;
+"245
+[e = _CCP2IF -> -> 0 `i `b ]
+"246
+}
+[e :U 433 ]
+[; ;Proyecto.c: 246: }
+[; ;Proyecto.c: 247: }
+"247
+[e :UE 432 ]
 }
 [a 4C 100 105 115 116 97 110 99 105 97 115 0 ]
-[a 5C 73 110 105 99 105 97 110 100 111 0 ]
+[a 8C 73 110 105 99 105 97 110 100 111 0 ]
 [a 7C 99 109 0 ]
+[a 10C 99 109 0 ]
+[a 13C 99 109 0 ]
 [a 1C 66 105 101 110 118 101 110 105 100 111 32 97 108 0 ]
 [a 3C 100 101 116 101 99 99 105 111 110 32 100 101 0 ]
 [a 2C 115 105 115 116 101 109 97 32 100 101 0 ]
-[a 6C 68 105 115 116 97 110 99 105 97 58 0 ]
+[a 11C 78 117 101 118 97 32 100 105 115 116 46 32 100 101 0 ]
+[a 5C 73 110 103 114 101 115 101 32 68 105 115 116 46 32 100 101 0 ]
+[a 14C 78 117 101 118 97 32 68 105 115 116 97 110 99 105 97 0 ]
+[a 15C 67 111 110 102 105 103 117 114 97 100 97 0 ]
+[a 9C 68 105 115 116 97 110 99 105 97 58 0 ]
+[a 16C 68 105 115 116 97 110 99 105 97 58 0 ]
+[a 6C 97 108 97 114 109 97 58 32 0 ]
+[a 12C 97 108 97 114 109 97 58 32 0 ]

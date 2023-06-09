@@ -5904,26 +5904,28 @@ RetardoLCD(2);
 #pragma config LVP=OFF
 #pragma config MCLRE=ON
 
-# 16
+
+
 unsigned char Tecla = 0;
 unsigned char Distancia;
-unsigned char Minimo=10.0;
-unsigned char en_entrada=0;
+int Minimo;
+int Minimo_Consola[5];
 
 
 void __interrupt() ISR(void);
 void Transmitir(unsigned char);
 unsigned int Recibir(void);
 void TransmitirDatos(unsigned int);
+void Recibir_Cadena(char*, unsigned int);
+void SaveData(unsigned int, unsigned char);
+unsigned char ReadData(unsigned int);
 
 void main(void) {
 BorraLCD();
-TRISB = 0b11110000;
-TRISA = 0;
 RBPU = 0;
+TRISB0 = 1;
 TRISD = 0;
-TRISC = 0b11000010;
-TRISE = 0b00001010;
+TRISC = 0b11010010;
 OSCCON = 0b01110000;
 _delay((unsigned long)((1)*(8000000/4000.0)));
 TXSTA = 0b00100000;
@@ -5931,16 +5933,22 @@ RCSTA = 0b10010000;
 BAUDCON = 0b00000000;
 SPBRG = 12;
 ADCON1 = 15;
-RBIF = 0;
-RBIE = 1;
-RCIE=1;
-RCIF=0;
+RCIE = 1;
+RCIF = 0;
 GIE = 1;
 
+INT0IE = 1;
+INT0IF = 0;
+INTEDG0 = 1;
+CCP2IE = 1;
+CCP2IF = 0;
+
+
 T1CON = 0b10010000;
+USBEN = 0;
 UTRDIS = 1;
 
-CCP1CON=0b00001100;
+CCP1CON = 0b00001100;
 T2CON = 0b00000010;
 TMR2 = 0;
 PR2 = 249;
@@ -5960,6 +5968,14 @@ DireccionaLCD(0xC0);
 MensajeLCD_Var("distancias");
 _delay((unsigned long)((1500)*(8000000/4000.0)));
 BorraLCD();
+MensajeLCD_Var("Ingrese Dist. de");
+DireccionaLCD(0xC0);
+MensajeLCD_Var("alarma: ");
+Recibir_Cadena(Minimo_Consola, 5);
+MensajeLCD_Var("cm");
+EscribeLCD_c(' ');
+_delay((unsigned long)((1500)*(8000000/4000.0)));
+BorraLCD();
 MensajeLCD_Var("Iniciando");
 _delay((unsigned long)((500)*(8000000/4000.0)));
 EscribeLCD_c('.');
@@ -5971,7 +5987,7 @@ _delay((unsigned long)((500)*(8000000/4000.0)));
 BorraLCD();
 MensajeLCD_Var("Distancia:");
 
-TMR2ON=1;
+TMR2ON = 1;
 while (1) {
 CCP2CON = 0b00000100;
 TMR1 = 0;
@@ -5981,29 +5997,20 @@ _delay((unsigned long)((10)*(8000000/4000000.0)));
 RC0 = 0;
 while (RC1 == 0);
 
-# 97
+# 110
 TMR1ON = 1;
 while (CCP2IF == 0);
 TMR1ON = 0;
 Distancia = CCPR2 / 58;
+SaveData(0, Distancia);
 
-if (!RE1) {
 TransmitirDatos(Minimo);
 
+if (Distancia <= Minimo) {
+CCPR1L = 125;
 } else {
-TransmitirDatos(Minimo);
-
+CCPR1L = 0;
 }
-
-if (Distancia<=Minimo){
-CCPR1L=125;
-}else{
-CCPR1L=0;
-}
-
-
-
-
 }
 }
 
@@ -6014,7 +6021,36 @@ TXREG = BufferT;
 
 unsigned int Recibir(void) {
 while (RCIF == 0);
+if (OERR == 1) {
+CREN = 0;
+CREN = 1;
+}
+RCIF = 0;
 return RCREG;
+}
+
+void Recibir_Cadena(char* Buffer, unsigned int tamano) {
+unsigned int cont_buf = 0;
+char c;
+int valor = 0;
+Minimo = 0;
+for (int i = 0; i < 3; i++) {
+c = Recibir();
+Buffer[i] = c;
+valor = Buffer[i] - 48;
+EscribeLCD_c(c);
+if (i == 0) {
+valor = valor * 100;
+Minimo = Minimo + valor;
+} else if (i == 1) {
+valor = valor * 10;
+Minimo = Minimo + valor;
+} else if (i == 2) {
+Minimo = Minimo + valor;
+}
+}
+Buffer[tamano - 2] = '\0';
+cont_buf = 0;
 }
 
 void TransmitirDatos(unsigned int Minimo) {
@@ -6047,40 +6083,57 @@ MensajeLCD_Var("cm");
 EscribeLCD_c(' ');
 }
 
-unsigned char LeerTeclado(void) {
-LATB = 0b11111110;
-if (RB5 == 0) return '=';
-else if (RB6 == 0) return '0';
-else if (RB7 == 0) return 'C';
-else {
-LATB = 0b11111101;
-if (RB5 == 0) return '9';
-else if (RB6 == 0) return '8';
-else if (RB7 == 0) return '7';
-else {
-LATB = 0b11111011;
-if (RB5 == 0) return '6';
-else if (RB6 == 0) return '5';
-else if (RB7 == 0) return '4';
-else {
-LATB = 0b11110111;
-if (RB5 == 0) return '3';
-else if (RB6 == 0) return '2';
-else if (RB7 == 0) return '1';
+void SaveData(unsigned int dir, unsigned char dato) {
+EEADR = dir;
+EEDATA = dato;
+
+EEPGD = 0;
+CFGS = 0;
+WREN = 1;
+
+GIE = 0;
+
+EECON2 = 0x55;
+EECON2 = 0xAA;
+WR = 1;
+GIE = 1;
+while (!EEIF);
+EEIF = 0;
+WREN = 0;
+
 }
-}
-}
-LATB = 0b11110000;
+
+unsigned char ReadData(unsigned int dir) {
+EEADR = dir;
+EEPGD = 0;
+CFGS = 0;
+RD = 1;
+
+return EEDATA;
 }
 
 void __interrupt() ISR(void) {
-
-# 213
-if (RCIF==1) {
-en_entrada=1;
-Minimo = Recibir();
-
-MensajeLCD_Var(Minimo);
+if (CCP2IF == 1) {
+if (INT0IF == 1) {
 _delay((unsigned long)((1000)*(8000000/4000.0)));
+BorraLCD();
+MensajeLCD_Var("Nueva dist. de");
+DireccionaLCD(0xC0);
+MensajeLCD_Var("alarma: ");
+Recibir_Cadena(Minimo_Consola, 5);
+MensajeLCD_Var("cm");
+EscribeLCD_c(' ');
+_delay((unsigned long)((2000)*(8000000/4000.0)));
+BorraLCD();
+MensajeLCD_Var("Nueva Distancia");
+DireccionaLCD(0xC0);
+MensajeLCD_Var("Configurada");
+_delay((unsigned long)((1000)*(8000000/4000.0)));
+BorraLCD();
+MensajeLCD_Var("Distancia:");
+INT0IF = 0;
+}
+CCP2IF = 0;
 }
 }
+

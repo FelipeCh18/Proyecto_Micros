@@ -12,41 +12,49 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/debug\Proyecto.X.debug.obj
-cinit CODE 0 FA0 FA0 2C 1 2
+cinit CODE 0 1142 1142 2C 1 2
 idloc IDLOC 5 200000 200000 8 1 1
-intcode_body CODE 0 CCA CCA 6E 1 2
-text0 CODE 0 84C 84C 1DE 1 2
-text1 CODE 0 E04 E04 52 1 2
-text2 CODE 0 A2A A2A F0 1 2
-text3 CODE 0 FCC FCC 2A 1 2
-text4 CODE 0 F66 F66 3A 1 2
-text5 CODE 0 1080 1080 C 1 2
-text6 CODE 0 BB6 BB6 8A 1 2
-text7 CODE 0 EE2 EE2 42 1 2
-text8 CODE 0 100E 100E 16 1 2
-text9 CODE 0 1024 1024 16 1 2
-text10 CODE 0 B1A B1A 9C 1 2
-text11 CODE 0 1050 1050 14 1 2
-text12 CODE 0 E56 E56 46 1 2
-text13 CODE 0 D38 D38 66 1 2
-text14 CODE 0 1064 1064 E 1 2
-text15 CODE 0 FF6 FF6 18 1 2
-text17 CODE 0 C40 C40 8A 1 2
-text18 CODE 0 F24 F24 42 1 2
-text19 CODE 0 103A 103A 16 1 2
-text20 CODE 0 E9C E9C 46 1 2
-text21 CODE 0 D9E D9E 66 1 2
-text22 CODE 0 1072 1072 E 1 2
-text23 CODE 0 108C 108C C 1 2
-idataCOMRAM CODE 0 1098 1098 2 1 1
-cstackCOMRAM COMRAM 1 1 1 24 1 1
-temp COMRAM 1 2A 2A 1 1 1
+intcode_body CODE 0 AAE AAE F4 1 2
+text0 CODE 0 890 890 21E 1 2
+text1 CODE 0 F86 F86 52 1 2
+text2 CODE 0 BA2 BA2 E8 1 2
+text3 CODE 0 116E 116E 2A 1 2
+text4 CODE 0 1108 1108 3A 1 2
+text5 CODE 0 133A 133A C 1 2
+text6 CODE 0 FD8 FD8 52 1 2
+text7 CODE 0 1198 1198 28 1 2
+text8 CODE 0 1272 1272 16 1 2
+text9 CODE 0 11E8 11E8 26 1 2
+text10 CODE 0 C8A C8A CA 1 2
+text11 CODE 0 120E 120E 26 1 2
+text12 CODE 0 1288 1288 16 1 2
+text13 CODE 0 129E 129E 16 1 2
+text14 CODE 0 E1E E1E 9C 1 2
+text15 CODE 0 12F6 12F6 14 1 2
+text16 CODE 0 107C 107C 46 1 2
+text17 CODE 0 EBA EBA 66 1 2
+text18 CODE 0 131E 131E E 1 2
+text19 CODE 0 125A 125A 18 1 2
+text21 CODE 0 D54 D54 CA 1 2
+text22 CODE 0 1234 1234 26 1 2
+text23 CODE 0 12B4 12B4 16 1 2
+text24 CODE 0 102A 102A 52 1 2
+text25 CODE 0 11C0 11C0 28 1 2
+text26 CODE 0 12CA 12CA 16 1 2
+text27 CODE 0 12E0 12E0 16 1 2
+text28 CODE 0 130A 130A 14 1 2
+text29 CODE 0 10C2 10C2 46 1 2
+text30 CODE 0 F20 F20 66 1 2
+text31 CODE 0 132C 132C E 1 2
+idataCOMRAM CODE 0 1346 1346 1 1 1
+cstackCOMRAM COMRAM 1 1 1 2B 1 1
+temp COMRAM 1 3B 3B 1 1 1
 intcode CODE 0 8 8 6 1 2
-smallconst SMALLCONST 0 800 800 4C 1 2
-dataCOMRAM COMRAM 1 28 28 2 1 1
-bssCOMRAM COMRAM 1 25 25 3 1 1
+smallconst SMALLCONST 0 800 800 90 1 2
+dataCOMRAM COMRAM 1 3A 3A 1 1 1
+bssCOMRAM COMRAM 1 2C 2C E 1 1
 config CONFIG 4 300000 300000 E 1 1
-$C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
+$C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
 idloc IDLOC 5 200000 200000 8 1 1
 init CODE 0 E E 4 1 2
 reset_vec CODE 0 0 0 6 1 2
@@ -75,12 +83,12 @@ BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 6-7 1
 CONST 12-7FF 1
-CONST 109A-7D3F 1
-SMALLCONST 109A-7D3F 1
+CONST 1347-7D3F 1
+SMALLCONST 1347-7D3F 1
 CODE 6-7 1
 CODE 12-7FF 1
-CODE 109A-7D3F 1
-BIGRAM 2B-3EE 1
+CODE 1347-7D3F 1
+BIGRAM 3C-3EE 1
 BIGRAM 400-7FF 1
 BIGSFR F60-F9B 1
 BIGSFR F9D-FD3 1
@@ -88,9 +96,9 @@ BIGSFR FD5-FDA 1
 BIGSFR FE0-FE2 1
 BIGSFR FE8-FEA 1
 BIGSFR FF0-FFB 1
-COMRAM 2B-5F 1
+COMRAM 3C-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 109A-7D3F 1
+MEDIUMCONST 1347-7D3F 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -105,323 +113,437 @@ MEDIUMCONST 109A-7D3F 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\Proyecto.X.debug.obj
-8 intcode CODE >3814:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-8 intcode CODE >188:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-108C text23 CODE >127:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-108C text23 CODE >128:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-1090 text23 CODE >129:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-1096 text23 CODE >130:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-1072 text22 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1072 text22 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1074 text22 CODE >101:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-107C text22 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-107E text22 CODE >104:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D9E text21 CODE >262:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DA0 text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DA2 text21 CODE >264:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DB0 text21 CODE >266:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DB2 text21 CODE >267:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DC2 text21 CODE >268:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DD2 text21 CODE >270:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DD4 text21 CODE >271:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DDC text21 CODE >273:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DDE text21 CODE >274:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DE6 text21 CODE >276:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DE8 text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DEC text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DF2 text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DF8 text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-DFE text21 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E9C text20 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E9E text20 CODE >55:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EA6 text20 CODE >56:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EB6 text20 CODE >57:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EBA text20 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EC0 text20 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-ED2 text20 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EDC text20 CODE >61:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EE0 text20 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-103A text19 CODE >118:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-103C text19 CODE >122:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-103E text19 CODE >123:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1044 text19 CODE >124:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1048 text19 CODE >125:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-104E text19 CODE >126:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-F24 text18 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F24 text18 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F2C text18 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F2E text18 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F32 text18 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F58 text18 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F64 text18 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-C40 text17 CODE >215:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-C40 text17 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-C4A text17 CODE >220:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-C7C text17 CODE >223:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-CAC text17 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-CCA intcode_body CODE >188:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-CE4 intcode_body CODE >213:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-CE8 intcode_body CODE >214:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-CEC intcode_body CODE >215:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-CF4 intcode_body CODE >217:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-D06 intcode_body CODE >218:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-D1C intcode_body CODE >220:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-FF6 text15 CODE >50:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-FF8 text15 CODE >51:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1008 text15 CODE >52:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-100C text15 CODE >53:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1064 text14 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1064 text14 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1066 text14 CODE >101:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-106E text14 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1070 text14 CODE >104:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D38 text13 CODE >262:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D3A text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D3C text13 CODE >264:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D4A text13 CODE >266:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D4C text13 CODE >267:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D5C text13 CODE >268:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D6C text13 CODE >270:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D6E text13 CODE >271:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D76 text13 CODE >273:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D78 text13 CODE >274:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D80 text13 CODE >276:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D82 text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D86 text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D8C text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D92 text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-D98 text13 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E56 text12 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E58 text12 CODE >55:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E60 text12 CODE >56:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E70 text12 CODE >57:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E74 text12 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E7A text12 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E8C text12 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E96 text12 CODE >61:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-E9A text12 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1050 text11 CODE >105:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1050 text11 CODE >107:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1052 text11 CODE >108:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1058 text11 CODE >109:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-105C text11 CODE >110:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1062 text11 CODE >111:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B1A text10 CODE >64:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B1A text10 CODE >66:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B1C text10 CODE >67:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B24 text10 CODE >68:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B2C text10 CODE >70:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B30 text10 CODE >71:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B34 text10 CODE >72:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B3A text10 CODE >73:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B42 text10 CODE >74:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B4A text10 CODE >76:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B4E text10 CODE >77:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B52 text10 CODE >78:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B58 text10 CODE >79:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B60 text10 CODE >80:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B68 text10 CODE >82:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B6C text10 CODE >83:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B70 text10 CODE >84:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B76 text10 CODE >85:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B7E text10 CODE >86:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B86 text10 CODE >87:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B8A text10 CODE >88:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B90 text10 CODE >89:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B96 text10 CODE >90:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-B9A text10 CODE >91:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BA0 text10 CODE >93:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BA4 text10 CODE >94:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BAA text10 CODE >95:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BAE text10 CODE >96:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BB4 text10 CODE >97:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1024 text9 CODE >227:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1026 text9 CODE >230:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1028 text9 CODE >231:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-102E text9 CODE >232:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1032 text9 CODE >233:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1038 text9 CODE >234:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-100E text8 CODE >118:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1010 text8 CODE >122:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1012 text8 CODE >123:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1018 text8 CODE >124:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-101C text8 CODE >125:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1022 text8 CODE >126:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-EE2 text7 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-EE2 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-EEA text7 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-EEC text7 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-EF0 text7 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F16 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-F22 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
-BB6 text6 CODE >215:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BB6 text6 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BC0 text6 CODE >220:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-BF2 text6 CODE >223:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-C22 text6 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
-1080 text5 CODE >122:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-1082 text5 CODE >123:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-1086 text5 CODE >124:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-108A text5 CODE >125:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-F66 text4 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F68 text4 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F6C text4 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F72 text4 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F76 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F78 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F7C text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F7E text4 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F82 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F86 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F8E text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F92 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F94 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F98 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F9C text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-F9E text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
-FCC text3 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FCE text3 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FD2 text3 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FD6 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FDE text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FE2 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FEA text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FEE text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FF2 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-FF4 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
-A2A text2 CODE >132:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A2A text2 CODE >133:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A32 text2 CODE >134:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A38 text2 CODE >135:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A3E text2 CODE >136:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A44 text2 CODE >137:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A4A text2 CODE >138:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A50 text2 CODE >139:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A56 text2 CODE >140:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A5C text2 CODE >141:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A62 text2 CODE >142:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A68 text2 CODE >143:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A6E text2 CODE >144:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A74 text2 CODE >146:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A84 text2 CODE >147:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A9C text2 CODE >148:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-AAC text2 CODE >149:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-AB2 text2 CODE >150:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-AB8 text2 CODE >151:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-ABE text2 CODE >152:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-AC4 text2 CODE >154:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-ACA text2 CODE >155:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-ADA text2 CODE >156:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-AF2 text2 CODE >157:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-B02 text2 CODE >158:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-B12 text2 CODE >159:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-B18 text2 CODE >160:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-E04 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E04 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E0C text1 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E14 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E18 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E1A text1 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E20 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E22 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E26 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E2C text1 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E38 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E40 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E42 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E48 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E4C text1 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E4C text1 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-E54 text1 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-84C text0 CODE >27:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-84C text0 CODE >28:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-850 text0 CODE >29:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-854 text0 CODE >30:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-858 text0 CODE >31:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-85A text0 CODE >32:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-85E text0 CODE >33:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-862 text0 CODE >34:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-866 text0 CODE >35:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-86A text0 CODE >36:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-878 text0 CODE >37:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-87C text0 CODE >38:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-880 text0 CODE >39:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-884 text0 CODE >40:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-888 text0 CODE >41:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-88C text0 CODE >42:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-88E text0 CODE >43:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-890 text0 CODE >44:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-892 text0 CODE >45:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-894 text0 CODE >46:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-896 text0 CODE >48:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-89A text0 CODE >49:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-89C text0 CODE >51:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8A0 text0 CODE >52:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8A4 text0 CODE >53:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8A8 text0 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8AC text0 CODE >55:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8B0 text0 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8B6 text0 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8BA text0 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8C0 text0 CODE >61:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8D0 text0 CODE >62:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8D6 text0 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-8E6 text0 CODE >64:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8 intcode CODE >4633:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+8 intcode CODE >224:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+132C text31 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+132C text31 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+132E text31 CODE >101:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1336 text31 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1338 text31 CODE >104:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F20 text30 CODE >262:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F22 text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F24 text30 CODE >264:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F32 text30 CODE >266:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F34 text30 CODE >267:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F44 text30 CODE >268:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F54 text30 CODE >270:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F56 text30 CODE >271:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F5E text30 CODE >273:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F60 text30 CODE >274:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F68 text30 CODE >276:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F6A text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F6E text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F74 text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F7A text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F80 text30 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10C2 text29 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10C4 text29 CODE >55:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10CC text29 CODE >56:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10DC text29 CODE >57:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10E0 text29 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10E6 text29 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10F8 text29 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1102 text29 CODE >61:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1106 text29 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+130A text28 CODE >105:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+130A text28 CODE >107:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+130C text28 CODE >108:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1312 text28 CODE >109:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1316 text28 CODE >110:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+131C text28 CODE >111:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12E0 text27 CODE >227:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12E2 text27 CODE >230:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12E4 text27 CODE >231:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12EA text27 CODE >232:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12EE text27 CODE >233:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12F4 text27 CODE >234:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12CA text26 CODE >118:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12CC text26 CODE >122:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12CE text26 CODE >123:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12D4 text26 CODE >124:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12D8 text26 CODE >125:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12DE text26 CODE >126:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+11C0 text25 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11C0 text25 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11C4 text25 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11C6 text25 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11C8 text25 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11DA text25 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11E6 text25 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+102A text24 CODE >215:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+102A text24 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1034 text24 CODE >220:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+104C text24 CODE >223:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1062 text24 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12B4 text23 CODE >131:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12B4 text23 CODE >132:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12B8 text23 CODE >133:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12BC text23 CODE >134:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12BE text23 CODE >135:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12C0 text23 CODE >136:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12C0 text23 CODE >137:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12C2 text23 CODE >138:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+12C8 text23 CODE >139:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1234 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1234 text22 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1240 text22 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1248 text22 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1250 text22 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1258 text22 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+D54 text21 CODE >141:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D54 text21 CODE >144:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D5C text21 CODE >145:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D64 text21 CODE >146:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D6C text21 CODE >147:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D74 text21 CODE >148:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D80 text21 CODE >149:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D98 text21 CODE >150:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D9E text21 CODE >151:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DA6 text21 CODE >152:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DC2 text21 CODE >153:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DCE text21 CODE >154:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DD8 text21 CODE >155:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DEE text21 CODE >157:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+DF8 text21 CODE >146:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+E0C text21 CODE >161:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+E1C text21 CODE >163:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AAE intcode_body CODE >224:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AD0 intcode_body CODE >225:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AD4 intcode_body CODE >226:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AD8 intcode_body CODE >227:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AEE intcode_body CODE >228:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AF2 intcode_body CODE >229:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AFA intcode_body CODE >230:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B00 intcode_body CODE >231:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B08 intcode_body CODE >232:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B18 intcode_body CODE >233:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B20 intcode_body CODE >234:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B26 intcode_body CODE >235:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B3E intcode_body CODE >236:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B42 intcode_body CODE >237:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B4A intcode_body CODE >238:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B50 intcode_body CODE >239:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B58 intcode_body CODE >240:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B6E intcode_body CODE >241:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B72 intcode_body CODE >242:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B7A intcode_body CODE >243:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B7C intcode_body CODE >245:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+B7E intcode_body CODE >247:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+125A text19 CODE >50:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+125C text19 CODE >51:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+126C text19 CODE >52:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1270 text19 CODE >53:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+131E text18 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+131E text18 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1320 text18 CODE >101:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1328 text18 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+132A text18 CODE >104:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EBA text17 CODE >262:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EBC text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EBE text17 CODE >264:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+ECC text17 CODE >266:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+ECE text17 CODE >267:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EDE text17 CODE >268:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EEE text17 CODE >270:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EF0 text17 CODE >271:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EF8 text17 CODE >273:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EFA text17 CODE >274:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F02 text17 CODE >276:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F04 text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F08 text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F0E text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F14 text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+F1A text17 CODE >263:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+107C text16 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+107E text16 CODE >55:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1086 text16 CODE >56:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1096 text16 CODE >57:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+109A text16 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10A0 text16 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10B2 text16 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10BC text16 CODE >61:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+10C0 text16 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12F6 text15 CODE >105:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12F6 text15 CODE >107:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12F8 text15 CODE >108:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12FE text15 CODE >109:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1302 text15 CODE >110:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1308 text15 CODE >111:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E1E text14 CODE >64:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E1E text14 CODE >66:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E20 text14 CODE >67:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E28 text14 CODE >68:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E30 text14 CODE >70:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E34 text14 CODE >71:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E38 text14 CODE >72:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E3E text14 CODE >73:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E46 text14 CODE >74:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E4E text14 CODE >76:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E52 text14 CODE >77:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E56 text14 CODE >78:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E5C text14 CODE >79:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E64 text14 CODE >80:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E6C text14 CODE >82:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E70 text14 CODE >83:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E74 text14 CODE >84:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E7A text14 CODE >85:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E82 text14 CODE >86:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E8A text14 CODE >87:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E8E text14 CODE >88:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E94 text14 CODE >89:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E9A text14 CODE >90:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+E9E text14 CODE >91:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EA4 text14 CODE >93:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EA8 text14 CODE >94:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EAE text14 CODE >95:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EB2 text14 CODE >96:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+EB8 text14 CODE >97:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+129E text13 CODE >118:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12A0 text13 CODE >122:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12A2 text13 CODE >123:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12A8 text13 CODE >124:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12AC text13 CODE >125:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+12B2 text13 CODE >126:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1288 text12 CODE >131:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1288 text12 CODE >132:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+128C text12 CODE >133:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1290 text12 CODE >134:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1292 text12 CODE >135:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1294 text12 CODE >136:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1294 text12 CODE >137:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1296 text12 CODE >138:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+129C text12 CODE >139:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+120E text11 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+120E text11 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+121A text11 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1222 text11 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+122A text11 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+1232 text11 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+C8A text10 CODE >141:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C8A text10 CODE >144:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C92 text10 CODE >145:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C9A text10 CODE >146:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CA2 text10 CODE >147:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CAA text10 CODE >148:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CB6 text10 CODE >149:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CCE text10 CODE >150:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CD4 text10 CODE >151:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CDC text10 CODE >152:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+CF8 text10 CODE >153:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D04 text10 CODE >154:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D0E text10 CODE >155:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D24 text10 CODE >157:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D2E text10 CODE >146:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D42 text10 CODE >161:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+D52 text10 CODE >163:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11E8 text9 CODE >195:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11E8 text9 CODE >196:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11EC text9 CODE >197:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11F0 text9 CODE >199:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11F2 text9 CODE >200:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11F4 text9 CODE >201:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11F6 text9 CODE >203:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11F8 text9 CODE >205:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+11FC text9 CODE >206:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1200 text9 CODE >207:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1202 text9 CODE >208:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1204 text9 CODE >209:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1208 text9 CODE >210:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+120A text9 CODE >211:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+120C text9 CODE >213:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1272 text8 CODE >227:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1274 text8 CODE >230:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1276 text8 CODE >231:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+127C text8 CODE >232:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1280 text8 CODE >233:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1286 text8 CODE >234:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1198 text7 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+1198 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+119C text7 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+119E text7 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11A0 text7 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11B2 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+11BE text7 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\strlen.c
+FD8 text6 CODE >215:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+FD8 text6 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+FE2 text6 CODE >220:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+FFA text6 CODE >223:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+1010 text6 CODE >219:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\LibLCDXC8.h
+133A text5 CODE >126:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+133C text5 CODE >127:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1340 text5 CODE >128:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1344 text5 CODE >129:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1108 text4 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+110A text4 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+110E text4 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1114 text4 CODE >11:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1118 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+111A text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+111E text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1120 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1124 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1128 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1130 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1134 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1136 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+113A text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+113E text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+1140 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbdiv.c
+116E text3 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1170 text3 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1174 text3 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1178 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1180 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1184 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+118C text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1190 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1194 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+1196 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lbmod.c
+BA2 text2 CODE >165:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BA2 text2 CODE >166:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BAA text2 CODE >167:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BB0 text2 CODE >168:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BB6 text2 CODE >169:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BBC text2 CODE >170:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BC2 text2 CODE >171:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BC8 text2 CODE >172:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BCE text2 CODE >173:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BD4 text2 CODE >174:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BDA text2 CODE >175:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BE0 text2 CODE >176:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BE6 text2 CODE >177:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BEC text2 CODE >179:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+BFC text2 CODE >180:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C14 text2 CODE >181:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C24 text2 CODE >182:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C2A text2 CODE >183:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C30 text2 CODE >184:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C36 text2 CODE >185:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C3C text2 CODE >187:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C42 text2 CODE >188:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C52 text2 CODE >189:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C6A text2 CODE >190:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C7A text2 CODE >191:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C82 text2 CODE >192:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+C88 text2 CODE >193:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+F86 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F86 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F8E text1 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F96 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F9A text1 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F9C text1 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FA2 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FA4 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FA8 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FAE text1 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FBA text1 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC2 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC4 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FCA text1 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FCE text1 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FCE text1 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FD6 text1 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+890 text0 CODE >28:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+890 text0 CODE >29:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+894 text0 CODE >30:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+896 text0 CODE >31:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+898 text0 CODE >32:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+89C text0 CODE >33:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8A0 text0 CODE >34:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8A4 text0 CODE >35:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8B2 text0 CODE >36:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8B6 text0 CODE >37:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8BA text0 CODE >38:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8BE text0 CODE >39:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8C2 text0 CODE >40:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8C6 text0 CODE >41:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8C8 text0 CODE >42:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8CA text0 CODE >43:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8CC text0 CODE >45:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8CE text0 CODE >46:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8D0 text0 CODE >47:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8D2 text0 CODE >48:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8D4 text0 CODE >49:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8D6 text0 CODE >52:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8DA text0 CODE >53:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8DC text0 CODE >54:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8DE text0 CODE >56:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8E2 text0 CODE >57:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8E6 text0 CODE >58:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8EA text0 CODE >59:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8EE text0 CODE >60:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8F2 text0 CODE >63:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+8F8 text0 CODE >64:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
 8FC text0 CODE >65:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-900 text0 CODE >66:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-910 text0 CODE >67:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-916 text0 CODE >68:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-926 text0 CODE >69:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-93C text0 CODE >70:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-940 text0 CODE >71:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-950 text0 CODE >72:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-966 text0 CODE >73:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-96C text0 CODE >74:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-982 text0 CODE >75:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-988 text0 CODE >76:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-99E text0 CODE >77:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9A4 text0 CODE >78:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9BA text0 CODE >79:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9BE text0 CODE >80:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9CE text0 CODE >82:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9D0 text0 CODE >84:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9D4 text0 CODE >85:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9DC text0 CODE >86:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9DE text0 CODE >87:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9E0 text0 CODE >88:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9E8 text0 CODE >89:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9EA text0 CODE >90:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9EE text0 CODE >97:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9F0 text0 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9F4 text0 CODE >99:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-9F6 text0 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A0E text0 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A18 text0 CODE >110:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A20 text0 CODE >111:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-A24 text0 CODE >113:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
-FA0 cinit CODE >698:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA0 cinit CODE >700:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA0 cinit CODE >703:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA0 cinit CODE >737:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA2 cinit CODE >738:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA4 cinit CODE >739:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA6 cinit CODE >740:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FA8 cinit CODE >741:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FAA cinit CODE >742:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FAC cinit CODE >743:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FAE cinit CODE >744:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FB2 cinit CODE >745:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FB4 cinit CODE >746:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FB8 cinit CODE >750:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FBA cinit CODE >751:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FBC cinit CODE >752:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FBE cinit CODE >758:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FBE cinit CODE >760:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FC0 cinit CODE >761:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FC2 cinit CODE >763:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FC4 cinit CODE >764:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FC6 cinit CODE >765:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
-FC8 cinit CODE >766:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
+902 text0 CODE >66:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+90A text0 CODE >67:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+910 text0 CODE >68:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+918 text0 CODE >69:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+92E text0 CODE >70:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+932 text0 CODE >71:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+93A text0 CODE >72:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+940 text0 CODE >73:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+948 text0 CODE >74:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+95E text0 CODE >75:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+962 text0 CODE >76:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+96A text0 CODE >77:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+970 text0 CODE >78:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+978 text0 CODE >79:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+988 text0 CODE >80:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+990 text0 CODE >81:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+996 text0 CODE >82:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9AC text0 CODE >83:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9B0 text0 CODE >84:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9B8 text0 CODE >85:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9CE text0 CODE >86:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9D4 text0 CODE >87:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9EA text0 CODE >88:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+9F0 text0 CODE >89:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A06 text0 CODE >90:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A0C text0 CODE >91:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A22 text0 CODE >92:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A26 text0 CODE >93:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A2E text0 CODE >95:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A30 text0 CODE >97:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A34 text0 CODE >98:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A3C text0 CODE >99:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A3E text0 CODE >100:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A40 text0 CODE >101:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A48 text0 CODE >102:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A4A text0 CODE >103:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A4E text0 CODE >110:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A50 text0 CODE >111:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A54 text0 CODE >112:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A56 text0 CODE >113:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A6E text0 CODE >114:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A7E text0 CODE >116:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+A8A text0 CODE >118:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AA4 text0 CODE >119:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+AA8 text0 CODE >121:E:\Uni-Nacho\La Nacho\Microcontroladores\Proyecto.X\Proyecto.c
+1142 cinit CODE >809:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1142 cinit CODE >811:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1142 cinit CODE >814:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1142 cinit CODE >845:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1144 cinit CODE >846:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1146 cinit CODE >847:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1148 cinit CODE >848:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+114A cinit CODE >849:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+114C cinit CODE >850:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+114E cinit CODE >851:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1150 cinit CODE >852:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1154 cinit CODE >856:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1158 cinit CODE >857:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+115A cinit CODE >858:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+115A cinit CODE >859:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+115C cinit CODE >860:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+115E cinit CODE >861:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1160 cinit CODE >867:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1160 cinit CODE >869:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1162 cinit CODE >870:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1164 cinit CODE >872:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1166 cinit CODE >873:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+1168 cinit CODE >874:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
+116A cinit CODE >875:C:\Users\acer\AppData\Local\Temp\xcAsh9s.as
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -434,100 +556,123 @@ FC8 cinit CODE >766:C:\Users\acer\AppData\Local\Temp\xcAsc4g.as
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__end_of_InicializaLCD BB6 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
+__end_of_InicializaLCD EBA 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Proyecto.X.debug.obj
-EnviaDato@a 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__Hspace_0 109A 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-__Hspace_1 2B 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+EnviaDato@a 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__Hspace_0 1347 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+__Hspace_1 3C 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Hspace_2 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Hspace_4 60000E 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-i2_HabilitaLCD 1072 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
+i2_HabilitaLCD 132C 0 CODE 0 text31 dist/default/debug\Proyecto.X.debug.obj
+SaveData@dato 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 i2MensajeLCD_Var@a 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-i2MensajeLCD_Var@i A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2MensajeLCD_Var@i 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\Proyecto.X.debug.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-__end_of_EnviaDato E9C 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+__end_of_EnviaDato 10C2 0 CODE 0 text16 dist/default/debug\Proyecto.X.debug.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Proyecto.X.debug.obj
+_SaveData 11E8 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
+_WR 7D31 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\Proyecto.X.debug.obj
-_LATB F8A 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_CFGS 7D36 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_CREN 7D5C 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_EEIF 7D0C 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _LATD F8C 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_RBIE 7F93 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_RBIF 7F90 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_OERR 7D59 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RBPU 7F8F 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RCIE 7CED 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TMR1 FCE 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TMR2 FCC 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TRMT 7D61 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-___sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-_main 84C 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
-btemp 2A 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
-MensajeLCD_Var@a 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-MensajeLCD_Var@i 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-start E 0 CODE 0 init C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
+_WREN 7D32 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+_main 890 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
+btemp 3B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+MensajeLCD_Var@a 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+MensajeLCD_Var@i 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+start E 0 CODE 0 init C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+__end_of_SaveData 120E 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
 i2strlen@cp 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_RetardoLCD D9E 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
-_EnviaDato E56 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
+__end_of_RetardoLCD F20 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
+?___wmul 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_EnviaDato 107C 0 CODE 0 text16 dist/default/debug\Proyecto.X.debug.obj
+i2Recibir_Cadena@tamano 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hpowerup E 0 CODE 0 powerup dist/default/debug\Proyecto.X.debug.obj
-ttemp5 2B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
-ttemp6 2E 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
-ttemp7 32 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+ttemp5 3C 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+ttemp6 3F 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+ttemp7 43 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
-Transmitir@BufferT 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__accesstop 60 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-intlevel0 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-intlevel1 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-intlevel2 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-intlevel3 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-_en_entrada 25 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+Transmitir@BufferT 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_BorraLCD 131E 0 CODE 0 text28 dist/default/debug\Proyecto.X.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+intlevel0 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+intlevel1 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+intlevel2 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+intlevel3 0 0 CODE 0 text C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Proyecto.X.debug.obj
-wtemp8 2B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
-TransmitirDatos@MinC 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+wtemp8 3C 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+TransmitirDatos@MinC 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/debug\Proyecto.X.debug.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/debug\Proyecto.X.debug.obj
-__pidataCOMRAM 1098 0 CODE 0 idataCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__pidataCOMRAM 1346 0 CODE 0 idataCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___wmul@multiplicand 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 _ADCON1 FC1 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-_DireccionaLCD 1024 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
+i2___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+_DireccionaLCD 1272 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
-i2_MensajeLCD_Var C40 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
+i2_MensajeLCD_Var 102A 0 CODE 0 text24 dist/default/debug\Proyecto.X.debug.obj
+_CCP2IE 7D00 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _CCP2IF 7D08 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
-_Distancia 26 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_Distancia 2E 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of___wmul 1234 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
+_EECON2 FA7 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_EEDATA FA8 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Proyecto.X.debug.obj
-___lbdiv@dividend 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-___lbmod@divisor 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-_interfaz 29 0 COMRAM 1 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbdiv@dividend 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbmod@divisor 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_interfaz 3A 0 COMRAM 1 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Proyecto.X.debug.obj
 __Hintcodelo E 0 CODE 0 intcodelo dist/default/debug\Proyecto.X.debug.obj
-__end_of___lbdiv FA0 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
-__end_of___lbmod FF6 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
-__end_of___lwdiv E56 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
-DireccionaLCD@a 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-?_strlen 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-_Transmitir 1080 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
-___lwdiv@quotient 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of___lbdiv 1142 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
+__end_of___lbmod 1198 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
+__end_of___lwdiv FD8 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
+DireccionaLCD@a 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_INT0IE 7F94 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_INT0IF 7F91 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+?_strlen 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_Transmitir 133A 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
+___lwdiv@quotient 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_ofi2_HabilitaLCD 1080 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_HabilitaLCD 133A 0 CODE 0 text31 dist/default/debug\Proyecto.X.debug.obj
+Recibir_Cadena@Buffer 20 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2Recibir_Cadena@valor C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lintcodelo E 0 CODE 0 intcodelo dist/default/debug\Proyecto.X.debug.obj
-_Minimo 28 0 COMRAM 1 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
-start_initialization FA0 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
-__end_of_TransmitirDatos B1A 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
+_Minimo 2C 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+start_initialization 1142 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
+__end_of_TransmitirDatos C8A 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
 _OSCCON FD3 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Proyecto.X.debug.obj
+i2___wmul 1234 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
+i2_Recibir_Cadena D54 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
 ___rparam_used 1 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-i2_EnviaDato E9C 0 CODE 0 text20 dist/default/debug\Proyecto.X.debug.obj
+i2_EnviaDato 10C2 0 CODE 0 text29 dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2___wmul 125A 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
 _TMR1ON 7E68 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TMR2ON 7E52 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_TRISB0 7C98 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _UTRDIS 7B7B 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-isa$xinst 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-__end_ofi2_MensajeLCD_Var CCA 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
-___lbdiv@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_Recibir 1098 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+isa$xinst 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+__end_ofi2_MensajeLCD_Var 107C 0 CODE 0 text24 dist/default/debug\Proyecto.X.debug.obj
+_Minimo_Consola 30 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbdiv@counter 20 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of_Recibir 129E 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
 __Hbank0 0 0 ABS 0 bank0 dist/default/debug\Proyecto.X.debug.obj
 __Hbank1 0 0 ABS 0 bank1 dist/default/debug\Proyecto.X.debug.obj
 __Hbank2 0 0 ABS 0 bank2 dist/default/debug\Proyecto.X.debug.obj
@@ -538,7 +683,7 @@ __Hbank6 0 0 ABS 0 bank6 dist/default/debug\Proyecto.X.debug.obj
 __Hbank7 0 0 ABS 0 bank7 dist/default/debug\Proyecto.X.debug.obj
 __Hcinit 0 0 ABS 0 cinit dist/default/debug\Proyecto.X.debug.obj
 __Hconst 0 0 CONST 0 const dist/default/debug\Proyecto.X.debug.obj
-__end_of_strlen F24 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
+__end_of_strlen 11C0 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
 __Hidata 0 0 CODE 0 idata dist/default/debug\Proyecto.X.debug.obj
 __Hidloc 200008 0 IDLOC 5 idloc dist/default/debug\Proyecto.X.debug.obj
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Proyecto.X.debug.obj
@@ -555,16 +700,17 @@ __Htext6 0 0 ABS 0 text6 dist/default/debug\Proyecto.X.debug.obj
 __Htext7 0 0 ABS 0 text7 dist/default/debug\Proyecto.X.debug.obj
 __Htext8 0 0 ABS 0 text8 dist/default/debug\Proyecto.X.debug.obj
 __Htext9 0 0 ABS 0 text9 dist/default/debug\Proyecto.X.debug.obj
-___lwdiv@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_Transmitir 108C 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
+___lwdiv@counter 20 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of_Transmitir 1346 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Proyecto.X.debug.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/debug\Proyecto.X.debug.obj
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\Proyecto.X.debug.obj
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+?i2_Recibir 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 i2RetardoLCD@a 2 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hcomram 0 0 ABS 0 comram dist/default/debug\Proyecto.X.debug.obj
 __Hconfig 30000E 0 CONFIG 4 config dist/default/debug\Proyecto.X.debug.obj
-_TransmitirDatos A2A 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
+_TransmitirDatos BA2 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/debug\Proyecto.X.debug.obj
 __Lbank1 0 0 ABS 0 bank1 dist/default/debug\Proyecto.X.debug.obj
 __Lbank2 0 0 ABS 0 bank2 dist/default/debug\Proyecto.X.debug.obj
@@ -575,7 +721,7 @@ __Lbank6 0 0 ABS 0 bank6 dist/default/debug\Proyecto.X.debug.obj
 __Lbank7 0 0 ABS 0 bank7 dist/default/debug\Proyecto.X.debug.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/debug\Proyecto.X.debug.obj
 __Lconst 0 0 CONST 0 const dist/default/debug\Proyecto.X.debug.obj
-i2_EscribeLCD_c 103A 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
+i2_EscribeLCD_c 12CA 0 CODE 0 text26 dist/default/debug\Proyecto.X.debug.obj
 __Lidata 0 0 CODE 0 idata dist/default/debug\Proyecto.X.debug.obj
 __Lidloc 0 0 IDLOC 5 idloc dist/default/debug\Proyecto.X.debug.obj
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Proyecto.X.debug.obj
@@ -593,6 +739,7 @@ __Ltext7 0 0 ABS 0 text7 dist/default/debug\Proyecto.X.debug.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/debug\Proyecto.X.debug.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/debug\Proyecto.X.debug.obj
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\Proyecto.X.debug.obj
+i2___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
 __Habs1 0 0 ABS 0 abs1 dist/default/debug\Proyecto.X.debug.obj
 __Hdata 0 0 ABS 0 data dist/default/debug\Proyecto.X.debug.obj
@@ -600,7 +747,7 @@ __Hheap 0 0 HEAP 7 heap dist/default/debug\Proyecto.X.debug.obj
 __Hinit 12 0 CODE 0 init dist/default/debug\Proyecto.X.debug.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/debug\Proyecto.X.debug.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/debug\Proyecto.X.debug.obj
-__Htemp 2B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+__Htemp 3C 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
 __Htext 0 0 ABS 0 text dist/default/debug\Proyecto.X.debug.obj
 __Labs1 0 0 ABS 0 abs1 dist/default/debug\Proyecto.X.debug.obj
 __Ldata 0 0 ABS 0 data dist/default/debug\Proyecto.X.debug.obj
@@ -608,43 +755,44 @@ __Lheap 0 0 HEAP 7 heap dist/default/debug\Proyecto.X.debug.obj
 __Linit E 0 CODE 0 init dist/default/debug\Proyecto.X.debug.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/debug\Proyecto.X.debug.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/debug\Proyecto.X.debug.obj
-__Ltemp 2A 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+__Ltemp 3B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
 __Ltext 0 0 ABS 0 text dist/default/debug\Proyecto.X.debug.obj
-TransmitirDatos@Minimo 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-int$flags 2A 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
+___wmul 120E 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
+TransmitirDatos@Minimo 23 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+int$flags 3B 0 COMRAM 1 temp dist/default/debug\Proyecto.X.debug.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_DireccionaLCD 103A 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
+__end_of_DireccionaLCD 1288 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
 __Hintret 0 0 ABS 0 intret dist/default/debug\Proyecto.X.debug.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/debug\Proyecto.X.debug.obj
 _GIE 7F97 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _ISR 8 0 CODE 0 intcode dist/default/debug\Proyecto.X.debug.obj
 _PR2 FCB 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_RB5 7C0D 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RC0 7C10 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RC1 7C11 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_RE1 7C21 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-__S0 109A 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-__S1 2B 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+__S0 1347 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+__S1 3C 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __S4 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __S5 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_HabilitaLCD 1064 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
-i2_strlen F24 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_Recibir_Cadena E1E 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
+_HabilitaLCD 131E 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
+i2_strlen 11C0 0 CODE 0 text25 dist/default/debug\Proyecto.X.debug.obj
 i2EscribeLCD_c@a 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Proyecto.X.debug.obj
-_BorraLCD 1050 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
+_BorraLCD 12F6 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Proyecto.X.debug.obj
-__end_ofi2_strlen F66 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
-__end_of_ISR D38 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
-int_func CCA 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_strlen 11E8 0 CODE 0 text25 dist/default/debug\Proyecto.X.debug.obj
+__end_of_ISR BA2 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
+int_func AAE 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/debug\Proyecto.X.debug.obj
-__end_of_BorraLCD 1064 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
-__end_ofi2_EscribeLCD_c 1050 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
+__end_of_BorraLCD 130A 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_EscribeLCD_c 12E0 0 CODE 0 text26 dist/default/debug\Proyecto.X.debug.obj
 __Hramtop 800 0 RAM 0 ramtop dist/default/debug\Proyecto.X.debug.obj
-strlen@s 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+strlen@s 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hrparam 0 0 COMRAM 1 rparam dist/default/debug\Proyecto.X.debug.obj
-i2_RetardoLCD D9E 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
+i2_RetardoLCD F20 0 CODE 0 text30 dist/default/debug\Proyecto.X.debug.obj
 __activetblptr 2 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+SaveData@dir 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hstruct 0 0 COMRAM 1 struct dist/default/debug\Proyecto.X.debug.obj
 __Htext10 0 0 ABS 0 text10 dist/default/debug\Proyecto.X.debug.obj
 __Htext11 0 0 ABS 0 text11 dist/default/debug\Proyecto.X.debug.obj
@@ -652,47 +800,67 @@ __Htext12 0 0 ABS 0 text12 dist/default/debug\Proyecto.X.debug.obj
 __Htext13 0 0 ABS 0 text13 dist/default/debug\Proyecto.X.debug.obj
 __Htext14 0 0 ABS 0 text14 dist/default/debug\Proyecto.X.debug.obj
 __Htext15 0 0 ABS 0 text15 dist/default/debug\Proyecto.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug\Proyecto.X.debug.obj
 __Htext17 0 0 ABS 0 text17 dist/default/debug\Proyecto.X.debug.obj
 __Htext18 0 0 ABS 0 text18 dist/default/debug\Proyecto.X.debug.obj
 __Htext19 0 0 ABS 0 text19 dist/default/debug\Proyecto.X.debug.obj
-__Htext20 0 0 ABS 0 text20 dist/default/debug\Proyecto.X.debug.obj
 __Htext21 0 0 ABS 0 text21 dist/default/debug\Proyecto.X.debug.obj
 __Htext22 0 0 ABS 0 text22 dist/default/debug\Proyecto.X.debug.obj
 __Htext23 0 0 ABS 0 text23 dist/default/debug\Proyecto.X.debug.obj
-__ptext10 B1A 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
-__ptext11 1050 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
-__ptext12 E56 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
-__ptext13 D38 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
-__ptext14 1064 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
-__ptext15 FF6 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
-__ptext17 C40 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
-__ptext18 F24 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
-__ptext19 103A 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
-__ptext20 E9C 0 CODE 0 text20 dist/default/debug\Proyecto.X.debug.obj
-__ptext21 D9E 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
-__ptext22 1072 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
-__ptext23 108C 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug\Proyecto.X.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/default/debug\Proyecto.X.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/default/debug\Proyecto.X.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/default/debug\Proyecto.X.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/default/debug\Proyecto.X.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/default/debug\Proyecto.X.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/default/debug\Proyecto.X.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/default/debug\Proyecto.X.debug.obj
+?i2___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__ptext10 C8A 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
+__ptext11 120E 0 CODE 0 text11 dist/default/debug\Proyecto.X.debug.obj
+__ptext12 1288 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
+__ptext13 129E 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
+__ptext14 E1E 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
+__ptext15 12F6 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
+__ptext16 107C 0 CODE 0 text16 dist/default/debug\Proyecto.X.debug.obj
+__ptext17 EBA 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
+__ptext18 131E 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
+__ptext19 125A 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
+__ptext21 D54 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
+__ptext22 1234 0 CODE 0 text22 dist/default/debug\Proyecto.X.debug.obj
+__ptext23 12B4 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+__ptext24 102A 0 CODE 0 text24 dist/default/debug\Proyecto.X.debug.obj
+__ptext25 11C0 0 CODE 0 text25 dist/default/debug\Proyecto.X.debug.obj
+__ptext26 12CA 0 CODE 0 text26 dist/default/debug\Proyecto.X.debug.obj
+__ptext27 12E0 0 CODE 0 text27 dist/default/debug\Proyecto.X.debug.obj
+__ptext28 130A 0 CODE 0 text28 dist/default/debug\Proyecto.X.debug.obj
+__ptext29 10C2 0 CODE 0 text29 dist/default/debug\Proyecto.X.debug.obj
+__ptext30 F20 0 CODE 0 text30 dist/default/debug\Proyecto.X.debug.obj
+__ptext31 132C 0 CODE 0 text31 dist/default/debug\Proyecto.X.debug.obj
 _BAUDCON FB8 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-___lbdiv F66 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
-___lbmod FCC 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
-__pintcode_body CCA 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
-___lwdiv E04 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
-strlen@cp 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbdiv 1108 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
+___lbmod 116E 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
+__pintcode_body AAE 0 CODE 0 intcode_body dist/default/debug\Proyecto.X.debug.obj
+___lwdiv F86 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
+strlen@cp 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Proyecto.X.debug.obj
 __Lbigram 0 0 ABS 0 bigram dist/default/debug\Proyecto.X.debug.obj
 __Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\Proyecto.X.debug.obj
 i2EnviaDato@a 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lcomram 0 0 ABS 0 comram dist/default/debug\Proyecto.X.debug.obj
 __Lconfig 0 0 CONFIG 4 config dist/default/debug\Proyecto.X.debug.obj
-_ConfiguraLCD FF6 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
-___lbdiv@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_ConfiguraLCD 125A 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
+i2Recibir_Cadena@Buffer 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___wmul@multiplier 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbdiv@divisor 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\Proyecto.X.debug.obj
-___lwdiv@divisor 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-_strlen EE2 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
+___lwdiv@divisor 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_strlen 1198 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/debug\Proyecto.X.debug.obj
-isa$std 1 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-stackhi 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-stacklo 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
+isa$std 1 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+stackhi 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+stacklo 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+__end_ofi2_DireccionaLCD 12F6 0 CODE 0 text27 dist/default/debug\Proyecto.X.debug.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/debug\Proyecto.X.debug.obj
 __Lintret 0 0 ABS 0 intret dist/default/debug\Proyecto.X.debug.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/debug\Proyecto.X.debug.obj
@@ -701,73 +869,94 @@ __Lspace_0 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lspace_1 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lspace_2 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lspace_4 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-__pbssCOMRAM 25 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__pbssCOMRAM 2C 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-_MensajeLCD_Var BB6 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
-_InicializaLCD B1A 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
-end_of_initialization FBE 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
-_EscribeLCD_c 100E 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
-__end_ofi2_RetardoLCD E04 0 CODE 0 text21 dist/default/debug\Proyecto.X.debug.obj
+_MensajeLCD_Var FD8 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
+_InicializaLCD E1E 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
+end_of_initialization 1160 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
+_EscribeLCD_c 129E 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_RetardoLCD F86 0 CODE 0 text30 dist/default/debug\Proyecto.X.debug.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Proyecto.X.debug.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/debug\Proyecto.X.debug.obj
-___lwdiv@dividend 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-?___lwdiv 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_ofi2_EnviaDato EE2 0 CODE 0 text20 dist/default/debug\Proyecto.X.debug.obj
+___lwdiv@dividend 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2DireccionaLCD@a 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+?___lwdiv 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_EnviaDato 1108 0 CODE 0 text29 dist/default/debug\Proyecto.X.debug.obj
 __Hreset_vec 6 0 CODE 0 reset_vec dist/default/debug\Proyecto.X.debug.obj
-_Recibir 108C 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+Recibir_Cadena@tamano 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_Recibir 1288 0 CODE 0 text12 dist/default/debug\Proyecto.X.debug.obj
 __Lramtop 800 0 RAM 0 ramtop dist/default/debug\Proyecto.X.debug.obj
 __Lrparam 0 0 COMRAM 1 rparam dist/default/debug\Proyecto.X.debug.obj
-__pcinit FA0 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
+__pcinit 1142 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
 ?i2_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__ptext0 84C 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
-__ptext1 E04 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
-__ptext2 A2A 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
-__ptext3 FCC 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
-__ptext4 F66 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
-__ptext5 1080 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
-__ptext6 BB6 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
-__ptext7 EE2 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
-__ptext8 100E 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
-__ptext9 1024 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
-___lbdiv@quotient 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__ptext0 890 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
+__ptext1 F86 0 CODE 0 text1 dist/default/debug\Proyecto.X.debug.obj
+__ptext2 BA2 0 CODE 0 text2 dist/default/debug\Proyecto.X.debug.obj
+__ptext3 116E 0 CODE 0 text3 dist/default/debug\Proyecto.X.debug.obj
+__ptext4 1108 0 CODE 0 text4 dist/default/debug\Proyecto.X.debug.obj
+__ptext5 133A 0 CODE 0 text5 dist/default/debug\Proyecto.X.debug.obj
+__ptext6 FD8 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
+__ptext7 1198 0 CODE 0 text7 dist/default/debug\Proyecto.X.debug.obj
+__ptext8 1272 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
+__ptext9 11E8 0 CODE 0 text9 dist/default/debug\Proyecto.X.debug.obj
+___lbdiv@quotient 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/debug\Proyecto.X.debug.obj
+Recibir_Cadena@valor 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/debug\Proyecto.X.debug.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/debug\Proyecto.X.debug.obj
 __Ltext12 0 0 ABS 0 text12 dist/default/debug\Proyecto.X.debug.obj
 __Ltext13 0 0 ABS 0 text13 dist/default/debug\Proyecto.X.debug.obj
 __Ltext14 0 0 ABS 0 text14 dist/default/debug\Proyecto.X.debug.obj
 __Ltext15 0 0 ABS 0 text15 dist/default/debug\Proyecto.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\Proyecto.X.debug.obj
 __Ltext17 0 0 ABS 0 text17 dist/default/debug\Proyecto.X.debug.obj
 __Ltext18 0 0 ABS 0 text18 dist/default/debug\Proyecto.X.debug.obj
 __Ltext19 0 0 ABS 0 text19 dist/default/debug\Proyecto.X.debug.obj
-__Ltext20 0 0 ABS 0 text20 dist/default/debug\Proyecto.X.debug.obj
 __Ltext21 0 0 ABS 0 text21 dist/default/debug\Proyecto.X.debug.obj
 __Ltext22 0 0 ABS 0 text22 dist/default/debug\Proyecto.X.debug.obj
 __Ltext23 0 0 ABS 0 text23 dist/default/debug\Proyecto.X.debug.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-__end_of_ConfiguraLCD 100E 0 CODE 0 text15 dist/default/debug\Proyecto.X.debug.obj
-___lbmod@dividend 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\Proyecto.X.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\Proyecto.X.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\Proyecto.X.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\Proyecto.X.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\Proyecto.X.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\Proyecto.X.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\Proyecto.X.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\Proyecto.X.debug.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+i2_DireccionaLCD 12E0 0 CODE 0 text27 dist/default/debug\Proyecto.X.debug.obj
+__end_of_ConfiguraLCD 1272 0 CODE 0 text19 dist/default/debug\Proyecto.X.debug.obj
+___lbmod@dividend 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Lpowerup E 0 CODE 0 powerup dist/default/debug\Proyecto.X.debug.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Proyecto.X.debug.obj
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\Proyecto.X.debug.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\Proyecto.X.debug.obj
-ConfiguraLCD@a 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-___heap_hi 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
-___heap_lo 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsc4g.obj
+ConfiguraLCD@a 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___heap_hi 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
+___heap_lo 0 0 ABS 0 - C:\Users\acer\AppData\Local\Temp\xcAsh9s.obj
 ___param_bank 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Proyecto.X.debug.obj
-__end_of__initialization FBE 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
-__end_of_MensajeLCD_Var C40 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
+__end_of__initialization 1160 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
+__end_ofi2_Recibir 12CA 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+_INTEDG0 7F8E 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+__end_of_MensajeLCD_Var 102A 0 CODE 0 text6 dist/default/debug\Proyecto.X.debug.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/debug\Proyecto.X.debug.obj
+_Recibir_Cadena C8A 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/debug\Proyecto.X.debug.obj
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_EscribeLCD_c 1024 0 CODE 0 text8 dist/default/debug\Proyecto.X.debug.obj
-?_Recibir 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-___lbmod@rem 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-__end_of_main A2A 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
+__end_of_EscribeLCD_c 12B4 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
+?_Recibir 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2_Recibir 12B4 0 CODE 0 text23 dist/default/debug\Proyecto.X.debug.obj
+___lbmod@rem 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2Recibir_Cadena@c B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+i2Recibir_Cadena@i E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of_main AAE 0 CODE 0 text0 dist/default/debug\Proyecto.X.debug.obj
 __pintcode 8 0 CODE 0 intcode dist/default/debug\Proyecto.X.debug.obj
-__end_of_HabilitaLCD 1072 0 CODE 0 text14 dist/default/debug\Proyecto.X.debug.obj
+__end_of_HabilitaLCD 132C 0 CODE 0 text18 dist/default/debug\Proyecto.X.debug.obj
 _CCPR2 FBB 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_EEADR FA9 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
+_EEPGD 7D37 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _LATD2 7C62 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _LATD3 7C63 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _RCREG FAE 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
@@ -775,15 +964,13 @@ _RCSTA FAB 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _SPBRG FAF 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _T1CON FCD 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _T2CON FCA 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_TRISA F92 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_TRISB F93 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TRISC F94 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TRISD F95 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_TRISE F96 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TXREG FAD 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _TXSTA FAC 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-RetardoLCD@a 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
-_Tecla 27 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+RetardoLCD@a 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_Tecla 2F 0 COMRAM 1 bssCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_USBEN 7B6B 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __HRAM 0 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Hbss 0 0 RAM 1 bss dist/default/debug\Proyecto.X.debug.obj
 __Hram 0 0 ABS 0 ram dist/default/debug\Proyecto.X.debug.obj
@@ -792,18 +979,23 @@ __LRAM 1 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 __Lbss 0 0 RAM 1 bss dist/default/debug\Proyecto.X.debug.obj
 __Lram 0 0 ABS 0 ram dist/default/debug\Proyecto.X.debug.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/debug\Proyecto.X.debug.obj
-EscribeLCD_c@a 18 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+EscribeLCD_c@a 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 _CCP1CON FBD 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
 _CCP2CON FBA 0 ABS 0 - dist/default/debug\Proyecto.X.debug.obj
-_RetardoLCD D38 0 CODE 0 text13 dist/default/debug\Proyecto.X.debug.obj
-__initialization FA0 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
-__pdataCOMRAM 28 0 COMRAM 1 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
+Recibir_Cadena@c 24 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+Recibir_Cadena@i 27 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+_RetardoLCD EBA 0 CODE 0 text17 dist/default/debug\Proyecto.X.debug.obj
+__initialization 1142 0 CODE 0 cinit dist/default/debug\Proyecto.X.debug.obj
+__pdataCOMRAM 3A 0 COMRAM 1 dataCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__end_of_Recibir_Cadena D54 0 CODE 0 text10 dist/default/debug\Proyecto.X.debug.obj
 __Hfardata 0 0 FARRAM 0 fardata dist/default/debug\Proyecto.X.debug.obj
-__Hsmallconst 84C 0 SMALLCONST 0 smallconst dist/default/debug\Proyecto.X.debug.obj
+___wmul@product 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+__Hsmallconst 890 0 SMALLCONST 0 smallconst dist/default/debug\Proyecto.X.debug.obj
 __Lifardata 0 0 CODE 0 ifardata dist/default/debug\Proyecto.X.debug.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Proyecto.X.debug.obj
-___lbmod@counter 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
+___lbmod@counter 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Proyecto.X.debug.obj
 __Hintcode E 0 CODE 0 intcode dist/default/debug\Proyecto.X.debug.obj
+i2_BorraLCD 130A 0 CODE 0 text28 dist/default/debug\Proyecto.X.debug.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -828,11 +1020,11 @@ __Hintcode E 0 CODE 0 intcode dist/default/debug\Proyecto.X.debug.obj
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text0 0 84C 84C 84E 1
-cstackCOMRAM 1 1 1 2A 1
+text0 0 890 890 AB7 1
+cstackCOMRAM 1 1 1 3B 1
 reset_vec 0 0 0 6 1
 intcode 0 8 8 A 1
-smallconst 0 800 800 4C 1
+smallconst 0 800 800 90 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

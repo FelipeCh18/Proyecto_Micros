@@ -10,28 +10,26 @@
 #pragma config MCLRE=ON //Habilita MCLR
 #define TRIG RC0 //Pin de trigger del ultrasonido
 #define ECHO RC1 //Pin de echo del ultrasonido
-#define INT RE0
-#define Led RA2
 
 unsigned char Tecla = 0; //Variable para leer Teclado
 unsigned char Distancia; //Resultado del sensor
-unsigned char Minimo=10.0;
-unsigned char en_entrada=0;
+int Minimo;
+int Minimo_Consola[5];
 //Distancia que dispara la alarma
 
 void __interrupt() ISR(void); //InterrupciÃ³n para leer teclado
 void Transmitir(unsigned char); //Transmitir por consola
 unsigned int Recibir(void); //Recibir por consola
 void TransmitirDatos(unsigned int);
+void Recibir_Cadena(char*, unsigned int);
+void Transmitir_Cadena(char *info);
 
 void main(void) {
     BorraLCD();
-    TRISB = 0b11110000;
-    TRISA = 0;
     RBPU = 0;
+    TRISB0 = 1;
     TRISD = 0;
-    TRISC = 0b11000010;
-    TRISE = 0b00001010;
+    TRISC = 0b11010010;
     OSCCON = 0b01110000;
     __delay_ms(1);
     TXSTA = 0b00100000; //Configuraci?n del transmisor, habilitaci?n del transmisor y modo asincr?nico, bajas velocidades
@@ -39,21 +37,24 @@ void main(void) {
     BAUDCON = 0b00000000;
     SPBRG = 12;
     ADCON1 = 15;
-    RBIF = 0;
-    RBIE = 1;
-    RCIE=1;
-    RCIF=0;
+    RCIE = 1;
+    RCIF = 0;
     GIE = 1;
+    INT0IE = 1;
+    INT0IF = 0;
+    INTEDG0 = 1;
+
 
     T1CON = 0b10010000;
+    USBEN = 0;
     UTRDIS = 1; //inhabilita el transciever
     //ConfiguraciÃ³n del PWM
-    CCP1CON=0b00001100;
+    CCP1CON = 0b00001100;
     T2CON = 0b00000010;
     TMR2 = 0; //Empieza a contar desde 0
     PR2 = 249;
     CCPR1L = 0;
-        
+
     //Fin config PWM
     ConfiguraLCD(4);
     InicializaLCD();
@@ -68,6 +69,19 @@ void main(void) {
     MensajeLCD_Var("distancias");
     __delay_ms(1500);
     BorraLCD();
+    MensajeLCD_Var("Ingrese Dist. de");
+    DireccionaLCD(0xC0);
+    MensajeLCD_Var("alarma: ");
+    Recibir_Cadena(Minimo_Consola, 5);
+    MensajeLCD_Var("cm");
+    EscribeLCD_c(' ');
+    Transmitir_Cadena("Distancia de alarma configurada: ");
+    Transmitir(Minimo / 100 + 48);
+    Transmitir((Minimo % 100) / 10 + 48);
+    Transmitir(Minimo % 10 + 48);
+    Transmitir_Cadena("cm \n\n");
+    __delay_ms(1500);
+    BorraLCD();
     MensajeLCD_Var("Iniciando");
     __delay_ms(500);
     EscribeLCD_c('.');
@@ -77,9 +91,9 @@ void main(void) {
     EscribeLCD_c('.');
     __delay_ms(500);
     BorraLCD();
-    MensajeLCD_Var("Distancia:"); 
+    MensajeLCD_Var("Distancia:");
     //redirigir el lcd al registro 0x8a
-    TMR2ON=1;
+    TMR2ON = 1;
     while (1) {
         CCP2CON = 0b00000100;
         TMR1 = 0;
@@ -98,24 +112,13 @@ void main(void) {
         while (CCP2IF == 0);
         TMR1ON = 0;
         Distancia = CCPR2 / 58;
+        TransmitirDatos(Minimo);
 
-        if (!RE1) {
-            TransmitirDatos(Minimo);
-//            if(en_entrada==1) Minimo=Minimo_Teclado;  
+        if (Distancia <= Minimo) {
+            CCPR1L = 125;
         } else {
-            TransmitirDatos(Minimo);
-//            if(en_entrada==1) Minimo=Minimo_Consola;
+            CCPR1L = 0;
         }
-        
-        if (Distancia<=Minimo){
-            CCPR1L=125;
-        }else{
-            CCPR1L=0;
-        }
-
-
-        //if (interruptor==1) Minimo=Recibir(); //1->Consola
-        //else Minimo= teclado xd
     }
 }
 
@@ -124,31 +127,67 @@ void Transmitir(unsigned char BufferT) {
     TXREG = BufferT;
 }
 
+void Transmitir_Cadena(char *info){          			// Funcion para transmitir una cadena de caracteres
+    while(*info)
+    {
+        Transmitir(*info++);
+    }
+}
+
 unsigned int Recibir(void) {
     while (RCIF == 0);
+    if (OERR == 1) {
+        CREN = 0;
+        CREN = 1;
+    }
+    RCIF = 0;
     return RCREG;
+}
+
+void Recibir_Cadena(char* Buffer, unsigned int tamano) {
+    unsigned int cont_buf = 0;
+    char c;
+    int valor = 0;
+    Minimo = 0;
+    for (int i = 0; i < 3; i++) {
+        c = Recibir();
+        Buffer[i] = c;
+        valor = Buffer[i] - 48;
+        EscribeLCD_c(c);
+        if (i == 0) {
+            valor = valor * 100;
+            Minimo = Minimo + valor;
+        } else if (i == 1) {
+            valor = valor * 10;
+            Minimo = Minimo + valor;
+        } else if (i == 2) {
+            Minimo = Minimo + valor;
+        }
+    }
+    Buffer[tamano - 2] = '\0';
+    cont_buf = 0;
 }
 
 void TransmitirDatos(unsigned int Minimo) {
     unsigned int DistC = Distancia, MinC = Minimo;
-    Transmitir('D');
-    Transmitir('i');
-    Transmitir('s');
-    Transmitir('t');
-    Transmitir('a');
-    Transmitir('n');
-    Transmitir('c');
-    Transmitir('i');
-    Transmitir('a');
-    Transmitir(':');
-    Transmitir(' ');
+    Transmitir_Cadena("Distancia de alarma: ");
+
+    Transmitir(Minimo / 100 + 48);
+    Transmitir((Minimo % 100) / 10 + 48);
+    Transmitir(Minimo % 10 + 48);
+    Transmitir_Cadena("cm  ");
+    
+    
+    Transmitir_Cadena("Distancia: ");
 
     Transmitir(Distancia / 100 + 48);
     Transmitir((Distancia % 100) / 10 + 48);
     Transmitir(Distancia % 10 + 48);
-    Transmitir('c');
-    Transmitir('m');
-    Transmitir(' ');
+    Transmitir_Cadena("cm  ");
+    
+    if(Distancia<=Minimo){
+        Transmitir_Cadena("¡¡¡Alarma Activada!!!");
+    }
     Transmitir('\n');
 
     DireccionaLCD(0xC7);
@@ -157,64 +196,32 @@ void TransmitirDatos(unsigned int Minimo) {
     EscribeLCD_c(Distancia % 10 + 48);
     MensajeLCD_Var("cm");
     EscribeLCD_c(' ');
-}
-
-unsigned char LeerTeclado(void) {
-    LATB = 0b11111110;
-    if (RB5 == 0) return '=';
-    else if (RB6 == 0) return '0';
-    else if (RB7 == 0) return 'C';
-    else {
-        LATB = 0b11111101;
-        if (RB5 == 0) return '9';
-        else if (RB6 == 0) return '8';
-        else if (RB7 == 0) return '7';
-        else {
-            LATB = 0b11111011;
-            if (RB5 == 0) return '6';
-            else if (RB6 == 0) return '5';
-            else if (RB7 == 0) return '4';
-            else {
-                LATB = 0b11110111;
-                if (RB5 == 0) return '3';
-                else if (RB6 == 0) return '2';
-                else if (RB7 == 0) return '1';
-            }
-        }
-    }
-    LATB = 0b11110000;
+    __delay_ms(200);
 }
 
 void __interrupt() ISR(void) {
-    /*if (RBIF == 1) {
-        en_entrada=1;
-        __delay_ms(10);
-        Led = 1;
-        Tecla = LeerTeclado();
+    if (INT0IF == 1) {
+        __delay_ms(1000);
         BorraLCD();
-        DireccionaLCD(0x80);
-        MensajeLCD_Var("Ingrese dist. de");
+        MensajeLCD_Var("Nueva dist. de");
         DireccionaLCD(0xC0);
         MensajeLCD_Var("alarma: ");
-        DireccionaLCD(0xC8);
-        EscribeLCD_c(Tecla);
-        __delay_ms(3000);
+        Recibir_Cadena(Minimo_Consola, 5);
+        MensajeLCD_Var("cm");
+        EscribeLCD_c(' ');
+        __delay_ms(2000);
         BorraLCD();
-        __delay_ms(10);
-        DireccionaLCD(0x80);
-        MensajeLCD_Var("Distancia: ");
-        DireccionaLCD(0xC7);
-        
-    }
-    __delay_ms(100);
-    RBIF = 0;
-    Led = 0;*/
-
-    if (RCIF==1) {
-        en_entrada=1;
-        Minimo = Recibir();
-        
-        MensajeLCD_Var(Minimo);
+        MensajeLCD_Var("Nueva Distancia");
+        DireccionaLCD(0xC0);
+        MensajeLCD_Var("Configurada");
+        Transmitir_Cadena("\nNueva distancia de alarma configurada: ");
+        Transmitir(Minimo / 100 + 48);
+        Transmitir((Minimo % 100) / 10 + 48);
+        Transmitir(Minimo % 10 + 48);
+        Transmitir_Cadena("cm  \n\n");
         __delay_ms(1000);
+        BorraLCD();
+        MensajeLCD_Var("Distancia:");  
     }
+    INT0IF = 0;
 }
